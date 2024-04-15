@@ -152,10 +152,10 @@
                 <li class="tocline"><a class="tocxref" href="#low-or-no-background-audio"><bdi class="secno">1.4.7 </bdi>낮은 배경음 또는 배경음 없음</a></li>
                 <li class="tocline"><a class="tocxref" href="#visual-presentation"><bdi class="secno">1.4.8 </bdi>시각적 표현</a></li>
                 <li class="tocline"><a class="tocxref" href="#images-of-text-no-exception"><bdi class="secno">1.4.9 </bdi>텍스트 이미지 (예외 없음)</a></li>
-                <li class="tocline"><a class="tocxref" href="#reflow"><bdi class="secno">1.4.10 </bdi>Reflow</a></li>
-                <li class="tocline"><a class="tocxref" href="#non-text-contrast"><bdi class="secno">1.4.11 </bdi>Non-text Contrast</a></li>
-                <li class="tocline"><a class="tocxref" href="#text-spacing"><bdi class="secno">1.4.12 </bdi>Text Spacing</a></li>
-                <li class="tocline"><a class="tocxref" href="#content-on-hover-or-focus"><bdi class="secno">1.4.13 </bdi>Content on Hover or Focus</a></li>
+                <li class="tocline"><a class="tocxref" href="#reflow"><bdi class="secno">1.4.10 </bdi>재정렬</a></li>
+                <li class="tocline"><a class="tocxref" href="#non-text-contrast"><bdi class="secno">1.4.11 </bdi>텍스트 아닌 콘텐츠의 명도대비</a></li>
+                <li class="tocline"><a class="tocxref" href="#text-spacing"><bdi class="secno">1.4.12 </bdi>텍스트 간격</a></li>
+                <li class="tocline"><a class="tocxref" href="#content-on-hover-or-focus"><bdi class="secno">1.4.13 </bdi>마우스오버 혹은 키보드 초점을 받은 콘텐츠</a></li>
               </ol>
             </li>
           </ol>
@@ -1040,114 +1040,126 @@
         </section>
         <section class="guideline" id="reflow">
           <div class="header-wrapper">
-            <h4 id="x1-4-10-reflow"><bdi class="secno">성공 기준 1.4.10 </bdi>Reflow</h4>
+            <h4 id="x1-4-10-reflow"><bdi class="secno">성공 기준 1.4.10 </bdi>재정렬</h4>
             <a class="self-link" href="#reflow" aria-label="섹션 고유링크 1.4.10"></a>
           </div>
           <div class="doclinks">
-            <a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow.html">이해 Reflow</a> <span class="screenreader">|</span> <br>
-            <a href="https://www.w3.org/WAI/WCAG22/quickref/#reflow">기법 Reflow</a>
+            <a href="https://www.w3.org/WAI/WCAG22/Understanding/reflow.html">재정렬 이해</a> <span class="screenreader">|</span> <br>
+            <a href="https://www.w3.org/WAI/WCAG22/quickref/#reflow">재정렬 </a>
           </div>
           <p class="conformance-level">(Level AA)</p>
-          <p>Content can be presented without loss of information or functionality, and without requiring scrolling in two dimensions for:</p>
-          <ul>
-            <li>Vertical scrolling content at a width equivalent to 320 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-1" title="visual angle of about 0.0213 degrees">CSS pixels</a>;</li>
-            <li>Horizontal scrolling content at a height equivalent to 256 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-2" title="visual angle of about 0.0213 degrees">CSS pixels</a>.</li>
-          </ul>
-          <p>Except for parts of the content which require two-dimensional layout for usage or meaning.
+          <p>
+            콘텐츠는 정보나 기능의 손실 없이, 그리고 다음의 경우에 대하여 2차원으로 스크롤할 필요 없이 제공되어야 한다.
           </p>
+          <ul>
+            <li>320 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-1" title="약 0.0213도의 시야각">CSS 픽셀</a> 너비의 세로 스크롤 콘텐츠</li>
+            <li>256 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-2" title="약 0.0213도의 시야각">CSS 픽셀</a> 높이의 가로 스크롤 콘텐츠</li>
+          </ul>
+          <p>사용상 또는 의미상 2차원적인 레이아웃이 필요한 콘텐츠는 예외로 한다.</p>
           <div class="note" role="note" id="issue-container-generatedID-8">
             <div role="heading" class="note-title marker" id="h-note-8" aria-level="5"><span>침고 1</span></div>
-            <p>320 CSS pixels is equivalent to a starting viewport width of 1280 CSS pixels wide at 400% zoom. For web content which is designed to scroll horizontally (e.g., with vertical text), 256 CSS pixels is equivalent to a starting viewport height of 1024 CSS pixels at 400% zoom.
+            <p>
+              320 CSS 픽셀은 400% 확대에서 1280 CSS 픽셀의 시작 뷰포트(viewport) 너비와 같다. 가로 방향으로 스크롤링하도록 설계된 웹 콘텐츠(예: 세로 텍스트)의 경우, 256 CSS 픽셀은 400% 확대에서 1024px 시작 뷰포트 높이와 같다.
             </p>
           </div>
           <div class="note" role="note" id="issue-container-generatedID-9">
             <div role="heading" class="note-title marker" id="h-note-9" aria-level="5"><span>침고 2</span></div>
-            <p>Examples of content which requires two-dimensional layout are images required for understanding (such as maps and diagrams), video, games, presentations, data tables (not individual cells), and interfaces where it is necessary to keep toolbars in view while manipulating content. It is acceptable to provide two-dimensional scrolling for such parts of the content.
+            <p>
+              2차원 레이아웃이 필요한 콘텐츠의 예로는 이미지, 지도, 다이어그램, 비디오, 게임, 프레젠테이션, 데이터 테이블, 그리고 콘텐츠를 조작하는 동안 보기(view) 탭에서 도구모음(toolbar)을 유지할 필요가 있는 인터페이스 등이 있다.
             </p>
           </div>
         </section>
         <section class="guideline" id="non-text-contrast">
           <div class="header-wrapper">
-            <h4 id="x1-4-11-non-text-contrast"><bdi class="secno">성공 기준 1.4.11 </bdi>Non-text Contrast</h4>
+            <h4 id="x1-4-11-non-text-contrast"><bdi class="secno">성공 기준 1.4.11 </bdi>텍스트 아닌 콘텐츠의 명도대비</h4>
             <a class="self-link" href="#non-text-contrast" aria-label="섹션 고유링크 1.4.11"></a>
           </div>
           <div class="doclinks">
-            <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">이해 Non-text Contrast</a> <span class="screenreader">|</span> <br>
-            <a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast">기법 Non-text Contrast</a>
+            <a href="https://www.w3.org/WAI/WCAG22/Understanding/non-text-contrast.html">텍스트 아닌 콘텐츠의 명도대비 이해</a> <span class="screenreader">|</span> <br>
+            <a href="https://www.w3.org/WAI/WCAG22/quickref/#non-text-contrast">텍스트 아닌 콘텐츠의 명도대비 기법</a>
           </div>
           <p class="conformance-level">(Level AA)</p>
-          <p>The visual <a href="#dfn-presentation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-presentation-2" title="rendering of the content in a form to be perceived by users">presentation</a> of the following have a <a href="#dfn-contrast-ratio" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-contrast-ratio-3" title="(L1 + 0.05) / (L2 + 0.05)">명도대비율</a> of at least 3:1 against adjacent color(s):</p>
+          <p>
+            다음과 같은 <a href="#dfn-presentation" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-presentation-2" title="rendering of the content in a form to be perceived by users">시각 표현</a>은 인접 색상 대비 <a href="#dfn-contrast-ratio" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-contrast-ratio-3" title="(L1 + 0.05) / (L2 + 0.05)">명도대비율</a>이 최소한 3:1 이상이어야 한다.
+          </p>
           <dl>
             <dt>사용자 인터페이스 구성요소</dt>
-            <dd>Visual information required to identify <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-interface-components-4" title="사용자가 고유한 기능에 대한 단일 컨트롤로 인식하는 콘텐츠의 일부">사용자 인터페이스 구성요소</a> and <a href="#dfn-states" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-states-1" title="dynamic property expressing characteristics of a user interface component that may change in response to user action or automated processes">states</a>, except for inactive components or where the appearance of the component is determined by the user agent and not modified by the author;</dd>
-            <dt>Graphical Objects</dt>
-            <dd>Parts of graphics required to understand the content, except when a particular presentation of graphics is <a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-4" title="제거될 경우, 콘텐츠의 정보 또는 기능을 근본적으로 변경할 수 있으며, 그리고 정보와 기능이 다른 방식으로는 준수될 수 없는">필수적인</a> to the information being conveyed.</dd>
+            <dd><a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-interface-components-4" title="사용자가 고유한 기능에 대한 단일 컨트롤로 인식하는 콘텐츠의 일부">사용자 인터페이스 구성요소</a>와 <a href="#dfn-states" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-states-1" title="사용자 행동(action) 또는 자동화된 과정(process)에 따라 반응이 변경될 수 있는 사용자 인터페이스 구성요소의 특성을 표현하는 동적 속성">상태</a>를 식별하기 위해 요구되는 시각적 정보. 단, 비활성 구성요소 또는 구성요소의 모양이 사용자 에이전트에 의해 결정되고 저작자에 의해 수정되지 않는 경우는 제외</dd>
+            <dt>그래픽 객체</dt>
+            <dd>콘텐츠를 이해하기 위해서 요구되는 그래픽의 일부. 단, 특정 그래픽 표현이 전달되는 정보에 <a href="#dfn-essential" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-essential-4" title="제거될 경우, 콘텐츠의 정보 또는 기능을 근본적으로 변경할 수 있으며, 그리고 정보와 기능이 다른 방식으로는 준수될 수 없는">필수적인</a> 경우는 제외</dd>
           </dl>
         </section>
         <section class="guideline" id="text-spacing">
           <div class="header-wrapper">
-            <h4 id="x1-4-12-text-spacing"><bdi class="secno">성공 기준 1.4.12 </bdi>Text Spacing</h4>
+            <h4 id="x1-4-12-text-spacing"><bdi class="secno">성공 기준 1.4.12 </bdi>텍스트 간격</h4>
             <a class="self-link" href="#text-spacing" aria-label="섹션 고유링크 1.4.12"></a>
           </div>
           <div class="doclinks">
-            <a href="https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html">이해 Text Spacing</a> <span class="screenreader">|</span> <br>
-            <a href="https://www.w3.org/WAI/WCAG22/quickref/#text-spacing">기법 Text Spacing</a>
+            <a href="https://www.w3.org/WAI/WCAG22/Understanding/text-spacing.html">텍스트 간격 이해</a> <span class="screenreader">|</span> <br>
+            <a href="https://www.w3.org/WAI/WCAG22/quickref/#text-spacing">텍스트 간격 기법</a>
           </div>
           <p class="conformance-level">(Level AA)</p>
-          <p>In content implemented using markup languages that support the following <a href="#dfn-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-7" title="프로그래밍 방식으로 결정될 수 있는 문자들의 순서로서, 그 순서는 인간 언어로 무언가를 표현한다.">텍스트</a> <a href="#dfn-style-properties" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-style-properties-1" title="property whose value determines the presentation (e.g. font, color, size, location, padding, volume, synthesized speech prosody) of content elements as they are rendered (e.g. onscreen, via loudspeaker, via braille display) by user agents">style properties</a>, no loss of content or functionality occurs by setting all of the following and by changing no other style property:</p>
+          <p>
+            다음의 <a href="#dfn-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-7" title="프로그래밍 방식으로 결정될 수 있는 문자들의 순서로서, 그 순서는 인간 언어로 무언가를 표현한다.">텍스트</a> <a href="#dfn-style-properties" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-style-properties-1" title="사용자 에이전트가 콘텐츠 요소들을 렌더링할 때(예: 화면에서, 확성기를 통해, 점자 표시장치를 통해), 그 요소들의 프레젠테이션(예: 글꼴, 색상, 크기, 위치, 패딩, 볼륨, 합성된 음성 운율)을 결정하는 속성값">스타일 속성</a>을 지원하는 마크업 언어를 사용하여 구현된 콘텐츠의 경우, 다음과 같은 것을 모두 설정한 후 추가적인 스타일 속성의 변경 없이도 콘텐츠나 기능에 손상이 없어야 한다.
+          </p>
           <ul>
-            <li>Line height (line spacing) to at least 1.5 times the font size;</li>
-            <li>Spacing following paragraphs to at least 2 times the font size;</li>
-            <li>Letter spacing (tracking) to at least 0.12 times the font size;</li>
-            <li>Word spacing to at least 0.16 times the font size.</li>
+            <li>줄 높이(줄 간격)는 글자 크기보다 최소 1.5배 이상</li>
+            <li>문단 간격이 글자 크기보다 최소 2배 이상</li>
+            <li>글자 간격이 글자 크기보다 최소 0.12배 이상</li>
+            <li>단어 간격이 글자 크기보다 최소 0.16배 이상</li>
           </ul>
-          <p>Exception: Human languages and scripts that do not make use of one or more of these text style properties in written text can conform using only the properties that exist for that combination of language and script.
+          <p>
+            예외: 서면(written) 텍스트에서 이러한 텍스트 스타일 속성 중 하나 이상을 사용하지 않는 사용자 언어와 스크립트는 해당 언어와 스크립트의 조합이 가능한 속성만을 사용하여 준수할 수 있다.
           </p>
           <div class="note" role="note" id="issue-container-generatedID-10">
             <div role="heading" class="note-title marker" id="h-note-10" aria-level="5"><span>침고 1</span></div>
-            <p>Content is not required to use these text spacing values. The requirement is to ensure that when a user overrides the authored text spacing, content or functionality is not lost.
+            <p>
+              텍스트 간격 값을 사용하는 것은 필수 사항이 아니다. 요구사항은 사용자가 원래 제작된 텍스트 간격을 무시하고 재설정할 때, 콘텐츠나 기능성이 손실되지 않도록 하는 것이다.
             </p>
           </div>
           <div class="note" role="note" id="issue-container-generatedID-11">
             <div role="heading" class="note-title marker" id="h-note-11" aria-level="5"><span>침고 2</span></div>
-            <p>Writing systems for some languages use different text spacing settings, such as paragraph start indent. Authors are encouraged to follow locally available guidance for improving readability and legibility of text in their writing system.
+            <p>
+              일부 언어의 쓰기 체계는 단락 시작 들여쓰기와 같은 다른 텍스트 텍스트 설정을 사용한다. 저작자는 쓰기 체계에서 텍스트의 가독성을 향상시키기 위해 현지에서 사용 가능한 지침을 따르는 것이 좋다.
             </p>
           </div>
         </section>
         <section class="guideline" id="content-on-hover-or-focus">
           <div class="header-wrapper">
-            <h4 id="x1-4-13-content-on-hover-or-focus"><bdi class="secno">성공 기준 1.4.13 </bdi>Content on Hover or Focus</h4>
+            <h4 id="x1-4-13-content-on-hover-or-focus"><bdi class="secno">성공 기준 1.4.13 </bdi>마우스오버 혹은 키보드 초점을 받은 콘텐츠</h4>
             <a class="self-link" href="#content-on-hover-or-focus" aria-label="섹션 고유링크 1.4.13"></a>
           </div>
           <div class="doclinks">
-            <a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html">이해 Content on Hover or Focus</a> <span class="screenreader">|</span> <br>
-            <a href="https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus">기법 Content on Hover or Focus</a>
+            <a href="https://www.w3.org/WAI/WCAG22/Understanding/content-on-hover-or-focus.html">마우스오버 혹은 키보드 초점을 받은 콘텐츠 이해</a> <span class="screenreader">|</span> <br>
+            <a href="https://www.w3.org/WAI/WCAG22/quickref/#content-on-hover-or-focus">마우스오버 혹은 키보드 초점을 받은 콘텐츠 기법</a>
           </div>
           <p class="conformance-level">(Level AA)</p>
-          <p>Where receiving and then removing pointer hover or keyboard focus triggers additional content to become visible and then hidden, the following are true:</p>
+          <p>마우스 포인터로 가리키거나(hover) 키보드 초점을 받은 다음 이를 제거했을 때 추가 콘텐츠가 보였다가 사라지도록 하는 경우, 다음을 준수해야 한다.</p>
           <dl>
-            <dt>Dismissible</dt>
-            <dd>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-3" title="결과에 도달하기 위한 과정이나 기법">매커니즘</a> is available to dismiss the additional content without moving pointer hover or keyboard focus, unless the additional content communicates an <a href="#dfn-input-error" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-input-error-1" title="information provided by the user that is not accepted">input error</a> or does not obscure or replace other content;</dd>
-            <dt>Hoverable</dt>
-            <dd>If pointer hover can trigger the additional content, then the pointer can be moved  over the additional content without the additional content disappearing;</dd>
-            <dt>Persistent</dt>
-            <dd>The additional content remains visible until the hover or focus trigger is removed, the user dismisses it, or its information is no longer valid.</dd>
+            <dt>해제 가능</dt>
+            <dd>추가 콘텐츠가 <a href="#dfn-input-error" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-input-error-1" title="사용자가 제공하였으나 수용되지 않는 정보">입력 오류</a>를 전달하거나 다른 콘텐츠를 숨기거나 바꾸지 않는 한, 마우스 포인터로 가리키거나 키보드 포커스를 이동하지 않고 추가 콘텐츠를 해제할 수 있는 <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-3" title="결과에 도달하기 위한 과정이나 기법">매커니즘</a>을 제공해야 한다.</dd>
+            <dt>마우스오버</dt>
+            <dd>마우스 포인터로 가리켜 추가 콘텐츠를 보여줄 경우, 포인터는 콘텐츠가 사라지지 않게 하면서 그 콘텐츠 위로 이동할 수 있어야 한다.</dd>
+            <dt>지속적인</dt>
+            <dd>추가 콘텐츠는 마우스오버, 키보드 초점이 해제되거나, 사용자가 해제하거나, 정보가 더 이상 유효하지 않을 때까지 볼 수 있어야 한다.</dd>
           </dl>
-          <p>Exception: The 시각적 표현 of the additional content is controlled by the user agent and is not modified by the author.
-          </p>
+          <p>예외: 추가 콘텐츠의 시각적 표현이 사용자 에이전트로 제어되고, 웹 콘텐츠 저작자가 그 시각적 표현을 수정할 수 없는 경우</p>
           <div class="note" role="note" id="issue-container-generatedID-12">
             <div role="heading" class="note-title marker" id="h-note-12" aria-level="5"><span>침고 1</span></div>
-            <p>Examples of additional content controlled by the user agent include browser tooltips created through use of the HTML <a href="https://html.spec.whatwg.org/multipage/dom.html#the-title-attribute"><code>title</code> attribute</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-html" title="HTML Standard">HTML</a></cite>].
+            <p>
+              사용자 에이전트가 제어하는 추가 콘텐츠의 예로는 HTML <a href="https://html.spec.whatwg.org/multipage/dom.html#the-title-attribute"><code>title</code> 속성</a> [<cite><a class="bibref" data-link-type="biblio" href="#bib-html" title="HTML Standard">HTML</a></cite>]을 사용하여 만든 브라우저 툴팁이 있다.
             </p>
           </div>
           <div class="note" role="note" id="issue-container-generatedID-13">
             <div role="heading" class="note-title marker" id="h-note-13" aria-level="5"><span>침고 2</span></div>
-            <p>Custom tooltips, sub-menus, and other nonmodal popups that display on hover and focus are examples of additional content covered by this criterion.
+            <p>
+              마우스오버나 키보드 초점에 따라 표시되는 사용자 맞춤형 툴팁, 부메뉴 및 기타 모달 방식이 아닌 팝업은 이 기준을 적용받는 추가 콘텐츠의 예이다.
             </p>
           </div>
           <div class="note" role="note" id="issue-container-generatedID-14">
             <div role="heading" class="note-title marker" id="h-note-14" aria-level="5"><span>침고 3</span></div>
-            <p>This criterion applies to content that appears in addition to the triggering component itself. Since hidden components that are made visible on keyboard focus (such as links used to skip to another part of a page) do not present additional content they are not covered by this criterion.
+            <p>
+              이 기준은 트리거 구성 요소 자체 외에 표시되는 콘텐츠에도 적용된다. 키보드 초점에 표시되는 숨겨진 구성 요소(예: 페이지의 다른 부분으로 건너뛰는 링크)는 추가 콘텐츠를 제공하지 않으므로 이 기준에서 다루지 않는다.
             </p>
           </div>
         </section>
@@ -1662,7 +1674,7 @@
           <p class="change">[New]</p>
           <p>When the keyboard <a href="#dfn-focus-indicator" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-focus-indicator-1" title="[New]">focus indicator</a> is visible, an area of the focus indicator meets all the following:</p>
           <ul>
-            <li>is at least as large as the area of a 2 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-3" title="visual angle of about 0.0213 degrees">CSS pixel</a> thick <a href="#dfn-perimeter" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-perimeter-1" title="[New]">perimeter</a> of the unfocused component or sub-component, and</li>
+            <li>is at least as large as the area of a 2 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-3" title="약 0.0213도의 시야각">CSS pixel</a> thick <a href="#dfn-perimeter" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-perimeter-1" title="[New]">perimeter</a> of the unfocused component or sub-component, and</li>
             <li>has a 명도대비율 of at least 3:1 between the same pixels in the focused and unfocused states.</li>
           </ul>
           <p>Exceptions:</p>
@@ -1794,7 +1806,7 @@
             <a href="https://www.w3.org/WAI/WCAG22/quickref/#target-size-enhanced">기법 Target Size (Enhanced)</a>
           </div>
           <p class="conformance-level">(Level AAA)</p>
-          <p>The size of the <a href="#dfn-targets" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-targets-1" title="region of the display that will accept a pointer action, such as the interactive area of a user interface component">target</a> for <a href="#dfn-pointer-inputs" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-pointer-inputs-1" title="input from a device that can target a specific coordinate (or set of coordinates) on a screen, such as a mouse, pen, or touch contact">pointer inputs</a> is at least 44 by 44 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-4" title="visual angle of about 0.0213 degrees">CSS pixels</a> except when:</p>
+          <p>The size of the <a href="#dfn-targets" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-targets-1" title="region of the display that will accept a pointer action, such as the interactive area of a user interface component">target</a> for <a href="#dfn-pointer-inputs" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-pointer-inputs-1" title="input from a device that can target a specific coordinate (or set of coordinates) on a screen, such as a mouse, pen, or touch contact">pointer inputs</a> is at least 44 by 44 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-4" title="약 0.0213도의 시야각">CSS 픽셀</a> except when:</p>
           <dl>
             <dt>Equivalent</dt>
             <dd>The target is available through an equivalent link or control on the same page that is at least 44 by 44 CSS pixels;</dd>
@@ -1849,7 +1861,7 @@
           </div>
           <p class="conformance-level">(Level AA)</p>
           <p class="change">[New]</p>
-          <p>The size of the <a href="#dfn-targets" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-targets-2" title="region of the display that will accept a pointer action, such as the interactive area of a user interface component">target</a> for <a href="#dfn-pointer-inputs" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-pointer-inputs-2" title="input from a device that can target a specific coordinate (or set of coordinates) on a screen, such as a mouse, pen, or touch contact">pointer inputs</a> is at least 24 by 24 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-5" title="visual angle of about 0.0213 degrees">CSS pixels</a>, except where:</p>
+          <p>The size of the <a href="#dfn-targets" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-targets-2" title="region of the display that will accept a pointer action, such as the interactive area of a user interface component">target</a> for <a href="#dfn-pointer-inputs" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-pointer-inputs-2" title="input from a device that can target a specific coordinate (or set of coordinates) on a screen, such as a mouse, pen, or touch contact">pointer inputs</a> is at least 24 by 24 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-5" title="약 0.0213도의 시야각">CSS 픽셀</a>, except where:</p>
           <ul>
             <li><strong>Spacing:</strong> Undersized targets (those less than 24 by 24 CSS pixels) are positioned so that if a 24 CSS pixel diameter circle is centered on the <a href="#dfn-bounding-boxes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-bounding-boxes-1" title="[New]">bounding box</a> of each, the circles do not intersect another target or the circle for another undersized target;</li>
             <li><strong>Equivalent:</strong> The function can be achieved through a different control on the same page that meets this criterion;</li>
@@ -2094,7 +2106,7 @@
             <a href="https://www.w3.org/WAI/WCAG22/quickref/#error-identification">기법 Error Identification</a>
           </div>
           <p class="conformance-level">(Level A)</p>
-          <p>If an <a href="#dfn-input-error" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-input-error-2" title="information provided by the user that is not accepted">input error</a> is automatically detected, the item that is in error is identified and the error is described to the user in text.
+          <p>If an <a href="#dfn-input-error" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-input-error-2" title="사용자가 제공하였으나 수용되지 않는 정보">input error</a> is automatically detected, the item that is in error is identified and the error is described to the user in text.
           </p>
         </section>
         <section class="guideline" id="labels-or-instructions">
@@ -2120,7 +2132,7 @@
             <a href="https://www.w3.org/WAI/WCAG22/quickref/#error-suggestion">기법 Error Suggestion</a>
           </div>
           <p class="conformance-level">(Level AA)</p>
-          <p>If an <a href="#dfn-input-error" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-input-error-3" title="information provided by the user that is not accepted">input error</a> is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.
+          <p>If an <a href="#dfn-input-error" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-input-error-3" title="사용자가 제공하였으나 수용되지 않는 정보">input error</a> is automatically detected and suggestions for correction are known, then the suggestions are provided to the user, unless it would jeopardize the security or purpose of the content.
           </p>
         </section>
         <section class="guideline" id="error-prevention-legal-financial-data">
@@ -3089,7 +3101,7 @@
         </dd>
         <dt><dfn data-lt="CSS pixels|CSS pixel" data-plurals="css pixels" id="dfn-css-pixels" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">CSS pixel</dfn></dt>
         <dd>
-          <p>visual angle of about 0.0213 degrees</p>
+          <p>약 0.0213도의 시야각</p>
           <p>A CSS pixel is the canonical unit of measure for all lengths and measurements in CSS.
             This unit is density-independent, and distinct from actual hardware pixels present
             in a display. User agents and operating systems should ensure that a CSS pixel is
@@ -3158,7 +3170,7 @@
         <dt class="new"><dfn id="dfn-focus-indicator" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">focus indicator</dfn></dt>
         <dd class="new">
           <p class="change">[New]</p>
-          <p>pixels that are changed to visually indicate when a <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-interface-components-14" title="사용자가 고유한 기능에 대한 단일 컨트롤로 인식하는 콘텐츠의 일부">사용자 인터페이스 구성요소</a> is in a focused <a href="#dfn-states" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-states-2" title="dynamic property expressing characteristics of a user interface component that may change in response to user action or automated processes">state</a>
+          <p>pixels that are changed to visually indicate when a <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-interface-components-14" title="사용자가 고유한 기능에 대한 단일 컨트롤로 인식하는 콘텐츠의 일부">사용자 인터페이스 구성요소</a> is in a focused <a href="#dfn-states" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-states-2" title="사용자 행동(action) 또는 자동화된 과정(process)에 따라 반응이 변경될 수 있는 사용자 인터페이스 구성요소의 특성을 표현하는 동적 속성">state</a>
           </p>
         </dd>
         <dt><dfn id="dfn-functionality" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">functionality</dfn></dt>
@@ -3283,7 +3295,7 @@
         </dd>
         <dt><dfn id="dfn-input-error" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">input error</dfn></dt>
         <dd>
-          <p>information provided by the user that is not accepted</p>
+          <p>사용자가 제공하였으나 수용되지 않는 정보</p>
           <div class="note" role="note" id="issue-container-generatedID-109">
             <div role="heading" class="note-title marker" id="h-note-109" aria-level="3"><span>참고</span></div>
             <div class="">
@@ -3851,7 +3863,7 @@
         </dd>
         <dt><dfn data-lt="states|state" id="dfn-states" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">상태</dfn></dt>
         <dd>
-          <p>dynamic property expressing characteristics of a user interface component that may change in response to user action or automated processes</p>
+          <p>사용자 행동(action) 또는 자동화된 과정(process)에 따라 반응이 변경될 수 있는 사용자 인터페이스 구성요소의 특성을 표현하는 동적 속성</p>
           <p>States do not affect the nature of the component, but represent data associated with the component or user interaction possibilities. Examples include focus, hover, select, press, check, visited/unvisited, and expand/collapse.
           </p>
         </dd>
@@ -3868,10 +3880,10 @@
             </li>
           </ol>
         </dd>
-        <dt><dfn data-lt="style properties|style property" id="dfn-style-properties" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">style property</dfn></dt>
+        <dt><dfn data-lt="스타일 속성|style property" id="dfn-style-properties" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">style property</dfn></dt>
         <dd>
-          <p>property whose value determines the presentation (e.g. font, color, size, location, padding, volume, synthesized speech prosody) of content elements as they are rendered (e.g. onscreen, via loudspeaker, via braille display) by user agents</p>
-          <p>Style properties can have several origins:</p>
+          <p>사용자 에이전트가 콘텐츠 요소들을 렌더링할 때(예: 화면에서, 확성기를 통해, 점자 표시장치를 통해), 그 요소들의 프레젠테이션(예: 글꼴, 색상, 크기, 위치, 패딩, 볼륨, 합성된 음성 운율)을 결정하는 속성값</p>
+          <p>스타일 속성 can have several origins:</p>
           <ul>
             <li>User agent default styles: The default style property values applied in the absence of any author or user styles. Some web content technologies specify a default rendering, others do not;</li>
             <li>Author styles: Style property values that are set by the author as part of the content (e.g. in-line styles, author style sheets);</li>
@@ -4766,7 +4778,7 @@
           <a href="#ref-for-dfn-contrast-ratio-2" title="§ 1.4.6 명도 대비 (향상된)">§ 1.4.6 명도 대비 (향상된)</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-contrast-ratio-3" title="§ 1.4.11 Non-text Contrast">§ 1.4.11 Non-text Contrast</a>
+          <a href="#ref-for-dfn-contrast-ratio-3" title="§ 1.4.11 텍스트 아닌 콘텐츠의 명도대비">§ 1.4.11 텍스트 아닌 콘텐츠의 명도대비</a>
         </li>
       </ul>
     </div>
@@ -4790,7 +4802,7 @@
       <p><b>Referenced in:</b></p>
       <ul>
         <li>
-          <a href="#ref-for-dfn-css-pixels-1" title="§ 1.4.10 Reflow">§ 1.4.10 Reflow</a> 
+          <a href="#ref-for-dfn-css-pixels-1" title="§ 1.4.10 Reflow">§ 1.4.10 재정렬</a> 
           <a href="#ref-for-dfn-css-pixels-2" title="Reference 2">(2)</a>
         </li>
         <li>
@@ -4870,7 +4882,7 @@
           <a href="#ref-for-dfn-essential-3" title="§ 1.4.9 텍스트 이미지 (예외 없음)">§ 1.4.9 텍스트 이미지 (예외 없음)</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-essential-4" title="§ 1.4.11 Non-text Contrast">§ 1.4.11 Non-text Contrast</a>
+          <a href="#ref-for-dfn-essential-4" title="§ 1.4.11 텍스트 아닌 콘텐츠의 명도대비">§ 1.4.11 텍스트 아닌 콘텐츠의 명도대비</a>
         </li>
         <li>
           <a href="#ref-for-dfn-essential-5" title="§ 2.2.1 Timing Adjustable">§ 2.2.1 Timing Adjustable</a>
@@ -5087,7 +5099,7 @@
       <p><b>Referenced in:</b></p>
       <ul>
         <li>
-          <a href="#ref-for-dfn-input-error-1" title="§ 1.4.13 Content on Hover or Focus">§ 1.4.13 Content on Hover or Focus</a>
+          <a href="#ref-for-dfn-input-error-1" title="§ 1.4.13 마우스오버 혹은 키보드 초점을 받은 콘텐츠">§ 1.4.13 마우스오버 혹은 키보드 초점을 받은 콘텐츠</a>
         </li>
         <li>
           <a href="#ref-for-dfn-input-error-2" title="§ 3.3.1 Error Identification">§ 3.3.1 Error Identification</a>
@@ -5246,7 +5258,7 @@
           <a href="#ref-for-dfn-mechanism-2" title="§ 1.4.8 시각적 표현">§ 1.4.8 시각적 표현</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-mechanism-3" title="§ 1.4.13 Content on Hover or Focus">§ 1.4.13 Content on Hover or Focus</a>
+          <a href="#ref-for-dfn-mechanism-3" title="§ 1.4.13 마우스오버 혹은 키보드 초점을 받은 콘텐츠">§ 1.4.13 마우스오버 혹은 키보드 초점을 받은 콘텐츠</a>
         </li>
         <li>
           <a href="#ref-for-dfn-mechanism-4" title="§ 2.1.4 Character Key Shortcuts">§ 2.1.4 Character Key Shortcuts</a>
@@ -5496,7 +5508,7 @@
           <a href="#ref-for-dfn-presentation-1" title="§ 1.3.1 Info and Relationships">§ 1.3.1 Info and Relationships</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-presentation-2" title="§ 1.4.11 Non-text Contrast">§ 1.4.11 Non-text Contrast</a>
+          <a href="#ref-for-dfn-presentation-2" title="§ 1.4.11 텍스트 아닌 콘텐츠의 명도대비">§ 1.4.11 텍스트 아닌 콘텐츠의 명도대비</a>
         </li>
         <li>
           <a href="#ref-for-dfn-presentation-3" title="§ 2.4.13 Focus Appearance">§ 2.4.13 Focus Appearance</a>
@@ -5866,7 +5878,7 @@
       <p><b>Referenced in:</b></p>
       <ul>
         <li>
-          <a href="#ref-for-dfn-states-1" title="§ 1.4.11 Non-text Contrast">§ 1.4.11 Non-text Contrast</a>
+          <a href="#ref-for-dfn-states-1" title="§ 1.4.11 텍스트 아닌 콘텐츠의 명도대비">§ 1.4.11 텍스트 아닌 콘텐츠의 명도대비</a>
         </li>
         <li>
           <a href="#ref-for-dfn-states-2" title="§ 6. Glossary">§ 6. Glossary</a>
@@ -5908,7 +5920,7 @@
       <p><b>Referenced in:</b></p>
       <ul>
         <li>
-          <a href="#ref-for-dfn-style-properties-1" title="§ 1.4.12 Text Spacing">§ 1.4.12 Text Spacing</a>
+          <a href="#ref-for-dfn-style-properties-1" title="§ 1.4.12 텍스트 간격">§ 1.4.12 텍스트 간격</a>
         </li>
       </ul>
     </div>
@@ -6027,7 +6039,7 @@
           <a href="#ref-for-dfn-text-6" title="§ 1.4.9 텍스트 이미지 (예외 없음)">§ 1.4.9 텍스트 이미지 (예외 없음)</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-text-7" title="§ 1.4.12 Text Spacing">§ 1.4.12 Text Spacing</a>
+          <a href="#ref-for-dfn-text-7" title="§ 1.4.12 텍스트 간격">§ 1.4.12 텍스트 간격</a>
         </li>
         <li>
           <a href="#ref-for-dfn-text-8" title="§ 2.5.3 Label in Name">§ 2.5.3 Label in Name</a>
@@ -6143,7 +6155,7 @@
           <a href="#ref-for-dfn-user-interface-components-3" title="§ 1.4.6 명도 대비 (향상된)">§ 1.4.6 명도 대비 (향상된)</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-user-interface-components-4" title="§ 1.4.11 Non-text Contrast">§ 1.4.11 Non-text Contrast</a>
+          <a href="#ref-for-dfn-user-interface-components-4" title="§ 1.4.11 텍스트 아닌 콘텐츠의 명도대비">§ 1.4.11 텍스트 아닌 콘텐츠의 명도대비</a>
         </li>
         <li>
           <a href="#ref-for-dfn-user-interface-components-5" title="§ 2.1.4 Character Key Shortcuts">§ 2.1.4 Character Key Shortcuts</a>
