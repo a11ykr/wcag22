@@ -124,7 +124,7 @@
                 <li class="tocline"><a class="tocxref" href="#audio-only-and-video-only-prerecorded"><bdi class="secno">1.2.1 </bdi>오디오 전용 및 비디오 전용(사전 녹음/녹화된)</a></li>
                 <li class="tocline"><a class="tocxref" href="#captions-prerecorded"><bdi class="secno">1.2.2 </bdi>자막 (사전 녹음된)</a></li>
                 <li class="tocline"><a class="tocxref" href="#audio-description-or-media-alternative-prerecorded"><bdi class="secno">1.2.3 </bdi>오디오 설명 또는 미디어 대체 수단(사전 녹화된)</a></li>
-                <li class="tocline"><a class="tocxref" href="#captions-live"><bdi class="secno">1.2.4 </bdi>Captions (Live)</a></li>
+                <li class="tocline"><a class="tocxref" href="#captions-live"><bdi class="secno">1.2.4 </bdi>자막 (실시간)</a></li>
                 <li class="tocline"><a class="tocxref" href="#audio-description-prerecorded"><bdi class="secno">1.2.5 </bdi>오디오 설명 (사전 녹화된)</a></li>
                 <li class="tocline"><a class="tocxref" href="#sign-language-prerecorded"><bdi class="secno">1.2.6 </bdi>수어 (사전 녹화된)</a></li>
                 <li class="tocline"><a class="tocxref" href="#extended-audio-description-prerecorded"><bdi class="secno">1.2.7 </bdi>확장형 오디오 설명 (사전 녹화된)</a></li>
@@ -426,7 +426,7 @@
             <li>2.4.12 <a href="#focus-not-obscured-enhanced">초점 표시 (향상)</a> (AAA)</li>
             <li>2.4.13 <a href="#focus-appearance">초점 형태</a> (AAA)</li>
             <li>2.5.7 <a href="#dragging-movements">끌기 동작</a> (AA)</li>
-            <li>2.5.8 <a href="#target-size-minimum">조작 대상 크기 (최소)</a> (AA)</li>
+            <li>2.5.8 <a href="#target-size-minimum">포인터 입력 크기 (최소)</a> (AA)</li>
             <li>3.2.6 <a href="#consistent-help">일관된 도움말</a> (A)</li>
             <li>3.3.7 <a href="#redundant-entry">중복 입력</a> (A)</li>
             <li>3.3.8 <a href="#accessible-authentication-minimum">접근 가능한 인증 (최소)</a> (AA)</li>
@@ -1916,8 +1916,7 @@
             <a href="#dfn-pointer-inputs" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-pointer-inputs-1" title="마우스, 펜 또는 터치 접촉과 같이, 화면에서 특정 좌표(또는 좌표 세트)를 대상으로 하는 장치를 통한 입력">포인터 입력</a> <a href="#dfn-targets" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-targets-1" title="사용자 인터페이스 구성요소의 대화형 영역과 같이 포인터 동작을 허용하는 디스플레이 영역">대상(target)</a>의 크기는 최소한 24×24 <a href="#dfn-css-pixels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-css-pixels-4" title="약 0.0213도의 시야각">CSS 픽셀</a> 이상이어야 한다. 다음의 경우는 예외이다.
           </p>
           <ul>
-            <li><strong>간격:</strong> 크기가 작은 대상(24 x 24 CSS 픽셀 미만)은 24 CSS 픽셀 직경의 원이 각 상자 경계의 중앙에 있는 경우 각 원이 다른 대상이나 크기가 작은 다른 대상의 원과 겹치지 않도록 배치된 경우
-              Undersized targets (those less than 24 by 24 CSS 픽셀s) are positioned so that if a 24 CSS 픽셀 diameter circle is centered on the <a href="#dfn-bounding-boxes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-bounding-boxes-1" title="[신규]">bounding box</a> of each, the circles do not intersect another target or the circle for another undersized target;</li>
+            <li><strong>간격:</strong> 크기가 작은 대상(24 x 24 CSS 픽셀 미만)은 24 CSS 픽셀 직경의 원이 각 <a href="#dfn-bounding-boxes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-bounding-boxes-1" title="[신규]">경계 상자</a>의 중앙에 있는 경우 각 원이 다른 대상이나 크기가 작은 다른 대상의 원과 겹치지 않도록 배치된 경우</li>
             <li><strong>동등한:</strong> 이 기준을 충족하는 동일 페이지의 다른 콘트롤을 통해 기능을 이용할 수 있는 경우</li>
             <li><strong>인라인:</strong> 입력 대상이 문장 안에 있거나 텍스트의 줄 높이에 따라 크기가 제한되는 경우</li>
             <li><strong>사용자 에이전트 제어:</strong> 입력 대상의 크기가 <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-3" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">사용자 에이전트</a>에 의해 결정되고 개발자에 의해 수정되지 않은 경우</li>
@@ -4670,7 +4669,7 @@
           <a href="#ref-for-dfn-audio-1" title="§ 1.2.2 Captions (Prerecorded)">§ 1.2.2 Captions (Prerecorded)</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-audio-2" title="§ 1.2.4 Captions (Live)">§ 1.2.4 Captions (Live)</a>
+          <a href="#ref-for-dfn-audio-2" title="§ 1.2.4 Captions (Live)">§ 1.2.4 자막 (실시간)</a>
         </li>
         <li>
           <a href="#ref-for-dfn-audio-3" title="§ 1.2.6 수어 (사전 녹화된)">§ 1.2.6 수어 (사전 녹화된)</a>
@@ -4776,7 +4775,7 @@
           <a href="#ref-for-dfn-captions-1" title="§ 1.2.2 Captions (Prerecorded)">§ 1.2.2 Captions (Prerecorded)</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-captions-2" title="§ 1.2.4 Captions (Live)">§ 1.2.4 Captions (Live)</a>
+          <a href="#ref-for-dfn-captions-2" title="§ 1.2.4 Captions (Live)">§ 1.2.4 자막 (실시간)</a>
         </li>
         <li>
           <a href="#ref-for-dfn-captions-3" title="§ 1.4.4 Resize Text">§ 1.4.4 Resize Text</a>
@@ -5339,7 +5338,7 @@
       <p><b>Referenced in:</b></p>
       <ul>
         <li>
-          <a href="#ref-for-dfn-live-1" title="§ 1.2.4 Captions (Live)">§ 1.2.4 Captions (Live)</a>
+          <a href="#ref-for-dfn-live-1" title="§ 1.2.4 Captions (Live)">§ 1.2.4 자막 (실시간)</a>
         </li>
         <li>
           <a href="#ref-for-dfn-live-2" title="§ 1.2.9 오디오 전용 (실시간)">§ 1.2.9 오디오 전용 (실시간)</a>
@@ -6070,7 +6069,7 @@
           <a href="#ref-for-dfn-synchronized-media-2" title="§ 1.2.3 Audio Description or 미디어 대체 수단 (사전 녹음/녹화된)">§ 1.2.3 Audio Description or 미디어 대체 수단 (사전 녹음/녹화된)</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-synchronized-media-3" title="§ 1.2.4 Captions (Live)">§ 1.2.4 Captions (Live)</a>
+          <a href="#ref-for-dfn-synchronized-media-3" title="§ 1.2.4 Captions (Live)">§ 1.2.4 자막 (실시간)</a>
         </li>
         <li>
           <a href="#ref-for-dfn-synchronized-media-4" title="§ 1.2.5 오디오 설명 (사전 녹화된)">§ 1.2.5 오디오 설명 (사전 녹화된)</a>
