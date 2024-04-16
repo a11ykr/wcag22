@@ -255,18 +255,18 @@
             </li>
           </ol>
         </li>
-        <li class="tocline"><a class="tocxref" href="#robust"><bdi class="secno">4. </bdi> Robust </a>
+        <li class="tocline"><a class="tocxref" href="#robust"><bdi class="secno">4. </bdi> 견고성</a>
           <ol class="toc">
-            <li class="tocline"><a class="tocxref" href="#compatible"><bdi class="secno">4.1 </bdi>Compatible</a>
+            <li class="tocline"><a class="tocxref" href="#compatible"><bdi class="secno">4.1 </bdi>호환성</a>
               <ol class="toc">
-                <li class="tocline"><a class="tocxref" href="#parsing"><bdi class="secno">4.1.1 </bdi>Parsing (Obsolete and removed)</a></li>
-                <li class="tocline"><a class="tocxref" href="#name-role-value"><bdi class="secno">4.1.2 </bdi>Name, Role, Value</a></li>
-                <li class="tocline"><a class="tocxref" href="#status-messages"><bdi class="secno">4.1.3 </bdi>Status Messages</a></li>
+                <li class="tocline"><a class="tocxref" href="#parsing"><bdi class="secno">4.1.1 </bdi>파싱 (제거됨)</a></li>
+                <li class="tocline"><a class="tocxref" href="#name-role-value"><bdi class="secno">4.1.2 </bdi>이름, 역할, 값</a></li>
+                <li class="tocline"><a class="tocxref" href="#status-messages"><bdi class="secno">4.1.3 </bdi>상태 메시지</a></li>
               </ol>
             </li>
           </ol>
         </li>
-        <li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>Conformance</a>
+        <li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>준수</a>
           <ol class="toc">
             <li class="tocline"><a class="tocxref" href="#interpreting-normative-requirements"><bdi class="secno">5.1 </bdi>Interpreting Normative Requirements</a></li>
             <li class="tocline"><a class="tocxref" href="#conformance-reqs"><bdi class="secno">5.2 </bdi>Conformance Requirements</a>
@@ -1820,7 +1820,7 @@
             <a href="https://www.w3.org/WAI/WCAG22/quickref/#label-in-name">기법 이름 안의 레이블</a>
           </div>
           <p class="conformance-level">(Level A)</p>
-          <p>For <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-interface-components-9" title="사용자가 고유한 기능에 대한 단일 컨트롤로 인식하는 콘텐츠의 일부">사용자 인터페이스 구성요소</a> with <a href="#dfn-labels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-labels-2" title="웹 콘텐츠 내의 구성요소를 식별하기 위해 사용자에게 제공되는 대체 텍스트를 가지고 있는 텍스트나 다른 구성 요소">레이블</a> that include <a href="#dfn-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-8" title="프로그래밍 방식으로 결정될 수 있는 문자들의 순서로서, 그 순서는 인간 언어로 무언가를 표현한다.">텍스트</a> or <a href="#dfn-images-of-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-images-of-text-6" title="특정 시각적인 효과를 달성하기 위해 텍스트가 아닌 형식(예: 이미지)으로 렌더링된 텍스트">텍스트 이미지</a>, the <a href="#dfn-name" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-name-2" title="text by which software can identify a component within Web content to the user">name</a> contains the text that is presented visually.
+          <p>For <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-interface-components-9" title="사용자가 고유한 기능에 대한 단일 컨트롤로 인식하는 콘텐츠의 일부">사용자 인터페이스 구성요소</a> with <a href="#dfn-labels" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-labels-2" title="웹 콘텐츠 내의 구성요소를 식별하기 위해 사용자에게 제공되는 대체 텍스트를 가지고 있는 텍스트나 다른 구성 요소">레이블</a> that include <a href="#dfn-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-8" title="프로그래밍 방식으로 결정될 수 있는 문자들의 순서로서, 그 순서는 인간 언어로 무언가를 표현한다.">텍스트</a> or <a href="#dfn-images-of-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-images-of-text-6" title="특정 시각적인 효과를 달성하기 위해 텍스트가 아닌 형식(예: 이미지)으로 렌더링된 텍스트">텍스트 이미지</a>, the <a href="#dfn-name" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-name-2" title="소프트웨어가 사용자에게 웹 콘텐츠 내의 구성요소를 식별할 수 있도록 해 주는 텍스트">이름</a> contains the text that is presented visually.
           </p>
           <div class="note" role="note" id="issue-container-generatedID-35">
             <div role="heading" class="note-title marker" id="h-note-35" aria-level="5"><span>참고</span></div>
@@ -2366,76 +2366,83 @@
     </section>
     <section class="principle" id="robust">
       <div class="header-wrapper">
-        <h2 id="x4-robust"><bdi class="secno">4. </bdi> Robust </h2>
+        <h2 id="x4-robust"><bdi class="secno">4. </bdi> 견고성</h2>
         <a class="self-link" href="#robust" aria-label="섹션 고유링크 4."></a>
       </div>
-      <p>Content must be robust enough that it can be interpreted by a wide variety of user agents, including assistive technologies.
+      <p>
+        콘텐츠는 보조 기술을 포함한 다양한 사용자 에이전트가 해석할 수 있을 정도로 견고해야 한다.
       </p>
       <section class="guideline" id="compatible">
         <div class="header-wrapper">
-          <h3 id="x4-1-compatible"><bdi class="secno">지침 4.1 </bdi>Compatible</h3>
+          <h3 id="x4-1-compatible"><bdi class="secno">지침 4.1 </bdi>호환성</h3>
           <a class="self-link" href="#compatible" aria-label="섹션 고유링크 4.1"></a>
         </div>
         <div class="doclinks">
-          <a href="https://www.w3.org/WAI/WCAG22/Understanding/compatible.html">이해 Compatible</a> <span class="screenreader">|</span> <br>
-          <a href="https://www.w3.org/WAI/WCAG22/quickref/#compatible">기법 Compatible</a>
+          <a href="https://www.w3.org/WAI/WCAG22/Understanding/compatible.html">호환성 이해</a> <span class="screenreader">|</span> <br>
+          <a href="https://www.w3.org/WAI/WCAG22/quickref/#compatible">호환성 기법</a>
         </div>
-        <p>Maximize compatibility with current and future user agents, including assistive technologies.
+        <p>
+          보조공학을 포함하여, 현재나 미래의 사용자 에이전트에 대한 호환성을 극대화해야 한다.
         </p>
         <section class="guideline" id="parsing">
           <div class="header-wrapper">
-            <h4 id="x4-1-1-parsing-obsolete-and-removed"><bdi class="secno">성공 기준 4.1.1 </bdi>Parsing (Obsolete and removed)</h4>
+            <h4 id="x4-1-1-parsing-obsolete-and-removed"><bdi class="secno">성공 기준 4.1.1 </bdi>파싱 (제거됨)</h4>
             <a class="self-link" href="#parsing" aria-label="섹션 고유링크 4.1.1"></a>
           </div>
           <div class="doclinks">
-            <a href="https://www.w3.org/WAI/WCAG22/Understanding/parsing.html">이해 Parsing (Obsolete and removed)</a> <span class="screenreader">|</span> <br>
-            <a href="https://www.w3.org/WAI/WCAG22/quickref/#parsing">기법 Parsing (Obsolete and removed)</a>
+            <a href="https://www.w3.org/WAI/WCAG22/Understanding/parsing.html">파싱 (제거됨) 이해</a> <span class="screenreader">|</span> <br>
+            <a href="https://www.w3.org/WAI/WCAG22/quickref/#parsing">파싱 (제거됨) 기법</a>
           </div>
           <div class="note" role="note" id="issue-container-generatedID-43">
             <div role="heading" class="note-title marker" id="h-note-43" aria-level="5"><span>참고</span></div>
-            <p>This criterion was originally adopted to address problems that assistive technology had directly parsing HTML. Assistive technology no longer has any need to directly parse HTML. Consequently, these problems either no longer exist or are addressed by other criteria. This criterion no longer has utility and is removed.
+            <p>
+              이 기준은 원래 보조 기술이 HTML을 직접 파싱(Parsing)하는 문제를 해결하기 위해 채택되었다. 보조 기술은 더 이상 HTML을 직접 파싱할 필요가 없다. 결과적으로 이러한 문제는 더 이상 존재하지 않거나 다른 기준으로 해결된다. 이 기준은 더 이상 유용성이 없으므로 제거되었다.
             </p>
           </div>
         </section>
         <section class="guideline" id="name-role-value">
           <div class="header-wrapper">
-            <h4 id="x4-1-2-name-role-value"><bdi class="secno">성공 기준 4.1.2 </bdi>Name, Role, Value</h4>
+            <h4 id="x4-1-2-name-role-value"><bdi class="secno">성공 기준 4.1.2 </bdi>이름, 역할, 값</h4>
             <a class="self-link" href="#name-role-value" aria-label="섹션 고유링크 4.1.2"></a>
           </div>
           <div class="doclinks">
-            <a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html">이해 Name, Role, Value</a> <span class="screenreader">|</span> <br>
-            <a href="https://www.w3.org/WAI/WCAG22/quickref/#name-role-value">기법 Name, Role, Value</a>
+            <a href="https://www.w3.org/WAI/WCAG22/Understanding/name-role-value.html">이름, 역할, 값 이해</a> <span class="screenreader">|</span> <br>
+            <a href="https://www.w3.org/WAI/WCAG22/quickref/#name-role-value">이름, 역할, 값 기법</a>
           </div>
           <p class="conformance-level">(Level A)</p>
-          <p>For all <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-interface-components-13" title="사용자가 고유한 기능에 대한 단일 컨트롤로 인식하는 콘텐츠의 일부">사용자 인터페이스 구성요소</a> (including but not limited to: form elements, links and components generated by scripts), the <a href="#dfn-name" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-name-3" title="text by which software can identify a component within Web content to the user">name</a> and <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-1" title="text or number by which software can identify the function of a component within Web content">role</a> can be <a href="#dfn-programmatically-determinable" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-programmatically-determinable-7" title="보조공학을 포함하여 다른 사용자 에이전트가 정보를 추출하여 사용자에게 다른 형식으로 제시할 수 있도록 제공된 개발자 제공 데이터로부터 소프트웨어에 의해 결정되거나 결정 가능한">프로그래밍 방식으로 결정</a>; states, properties, and values that can be set by the user can be <a href="#dfn-programmatically-set" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-programmatically-set-1" title="set by software using methods that are supported by user agents, including assistive technologies">programmatically set</a>; and notification of changes to these items is available to <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-4" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">user agents</a>, including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-3" title="hardware and/or software that acts as a user agent, or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents">assistive technologies</a>.
+          <p>
+            모든 <a href="#dfn-user-interface-components" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-interface-components-13" title="사용자가 고유한 기능에 대한 단일 컨트롤로 인식하는 콘텐츠의 일부">사용자 인터페이스 구성요소</a>(서식 요소, 링크, 스크립트에 의해 생성된 요소를 포함하되, 이에 국한되지 않음)의 경우, <a href="#dfn-name" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-name-3" title="소프트웨어가 사용자에게 웹 콘텐츠 내의 구성요소를 식별할 수 있도록 해 주는 텍스트">이름</a>과 <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-1" title="소프트웨어가 웹 콘텐츠 내에 있는 구성요소의 기능을 식별할 수 있도록 해 주는 텍스트나 숫자">역할</a>은 <a href="#dfn-programmatically-determinable" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-programmatically-determinable-7" title="보조공학을 포함하여 다른 사용자 에이전트가 정보를 추출하여 사용자에게 다른 형식으로 제시할 수 있도록 제공된 개발자 제공 데이터로부터 소프트웨어에 의해 결정되거나 결정 가능한">프로그래밍 방식으로 결정</a>되어야 한다. 사용자에 의해서 설정될 수 있는 상태(states), 속성(properties) 및 값(values)은 <a href="#dfn-programmatically-set" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-programmatically-set-1" title="보조공학을 포함하여, 사용자 에이전트가 지원하는 방법으로 소프트웨어에 의해 설정된">프로그래밍 방식으로 설정</a>될 수 있어야 한다. 이러한 항목의 변경사항은, <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-4" title="사용자 에이전트 역할을 하거나 주류 사용자 에이전트와 함께 작동하며, 주류 사용자 에이전트가 제공하는 것 이상의, 장애를 지닌 사용자의 요구사항을 충족하는 기능을 제공하는 하드웨어나 소프트웨어">보조 기술</a>을 포함하여, <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-4" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">사용자 에이전트</a>에 제공되어야 한다.
           </p>
           <div class="note" role="note" id="issue-container-generatedID-44">
             <div role="heading" class="note-title marker" id="h-note-44" aria-level="5"><span>참고</span></div>
-            <p>This success criterion is primarily for Web authors who develop or script their own user interface components. For example, standard HTML controls already meet this success criterion when used according to specification.
+            <p>
+              이 성공기준은 주로 사용자 인터페이스 구성요소를 개발하거나 스크립팅하는 웹 개발자를 위한 것이다. 예를 들어, 표준 HTML 컨트롤은 사양에 따라 사용되었을 때, 이미 이 성공기준을 준수한 것이다.
             </p>
           </div>
         </section>
         <section class="guideline" id="status-messages">
           <div class="header-wrapper">
-            <h4 id="x4-1-3-status-messages"><bdi class="secno">성공 기준 4.1.3 </bdi>Status Messages</h4>
+            <h4 id="x4-1-3-status-messages"><bdi class="secno">성공 기준 4.1.3 </bdi>상태 메시지</h4>
             <a class="self-link" href="#status-messages" aria-label="섹션 고유링크 4.1.3"></a>
           </div>
           <div class="doclinks">
-            <a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html">이해 Status Messages</a> <span class="screenreader">|</span> <br>
-            <a href="https://www.w3.org/WAI/WCAG22/quickref/#status-messages">기법 Status Messages</a>
+            <a href="https://www.w3.org/WAI/WCAG22/Understanding/status-messages.html">상태 메시지 이해</a> <span class="screenreader">|</span> <br>
+            <a href="https://www.w3.org/WAI/WCAG22/quickref/#status-messages">상태 메시지 기법</a>
           </div>
           <p class="conformance-level">(Level AA)</p>
-          <p>In content implemented using markup languages, <a href="#dfn-status-messages" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-status-messages-1" title="change in content that is not a change of context, and that provides information to the user on the success or results of an action, on the waiting state of an application, on the progress of a process, or on the existence of errors">status messages</a> can be <a href="#dfn-programmatically-determinable" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-programmatically-determinable-8" title="보조공학을 포함하여 다른 사용자 에이전트가 정보를 추출하여 사용자에게 다른 형식으로 제시할 수 있도록 제공된 개발자 제공 데이터로부터 소프트웨어에 의해 결정되거나 결정 가능한">프로그래밍 방식으로 결정</a> through <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-2" title="text or number by which software can identify the function of a component within Web content">role</a> or properties such that they can be presented to the user by <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-4" title="hardware and/or software that acts as a user agent, or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents">assistive technologies</a> without receiving focus.
+          <p>
+            마크업 언어를 사용하여 구현된 콘텐츠의 경우, <a href="#dfn-status-messages" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-status-messages-1" title="맥락의 변화가 아닌, 사용자에게 작업의 성공 또는 결과, 애플리케이션의 대기 상태, 프로세스의 진행 또는 오류 존재 여부에 대한 정보를 제공하는 콘텐츠의 변화">상태 메시지</a>는 초점을 받지 않고 <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-4" title="사용자 에이전트 역할을 하거나 주류 사용자 에이전트와 함께 작동하며, 주류 사용자 에이전트가 제공하는 것 이상의, 장애를 지닌 사용자의 요구사항을 충족하는 기능을 제공하는 하드웨어나 소프트웨어">보조 기술</a>을 통해 사용자에게 제시될 수 있도록 <a href="#dfn-role" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-role-2" title="소프트웨어가 웹 콘텐츠 내에 있는 구성요소의 기능을 식별할 수 있도록 해 주는 텍스트나 숫자">역할</a>이나 속성을 통해 <a href="#dfn-programmatically-determinable" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-programmatically-determinable-8" title="보조공학을 포함하여 다른 사용자 에이전트가 정보를 추출하여 사용자에게 다른 형식으로 제시할 수 있도록 제공된 개발자 제공 데이터로부터 소프트웨어에 의해 결정되거나 결정 가능한">프로그래밍 방식으로 결정</a>될 수 있어야 한다.
           </p>
         </section>
       </section>
     </section>
     <section id="conformance">
       <div class="header-wrapper">
-        <h2 id="x5-conformance"><bdi class="secno">5. </bdi>Conformance</h2>
+        <h2 id="x5-conformance"><bdi class="secno">5. </bdi>준수</h2>
         <a class="self-link" href="#conformance" aria-label="섹션 고유링크 5."></a>
       </div>
-      <p>This section lists requirements for <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-1" title="satisfying all the requirements of a given standard, guideline or specification">conformance</a> to WCAG 2.2. It also gives information about how to make conformance claims, which are optional. Finally, it describes what it means to be <a href="#dfn-accessibility-supported" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-supported-2" title="사용자의 보조공학뿐만 아니라 브라우저와 다른 사용자 에이전트에 있는 접근성 특성들에 의해 지원된">접근성 지원</a>, since only accessibility-supported ways of using technologies can be <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-1" title="the content would not conform if that technology is turned off or is not supported">relied upon</a> for conformance. <a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance">Understanding Conformance</a> includes further explanation of the  accessibility-supported concept.
+      <p>
+        이 섹션에서는 WCAG 2.2 <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-1" title="표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것">준수</a> 요구사항을 설명한다. 이 섹션은 또한 선택적인 준수 선언(claims) 방법에 대한 정보도 제공한다. 마지막으로, 이 절은 준수를 위해 <a href="#dfn-accessibility-supported" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-supported-2" title="사용자의 보조공학뿐만 아니라 브라우저와 다른 사용자 에이전트에 있는 접근성 특성들에 의해 지원된">접근성 지원</a> 기술 활용 방법에만 <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-1" title="해당 기술이 해제되거나 지원하지 않으면, 콘텐츠가 준수되지 않는">의존</a>할 수 있기 때문에, 지원되는 접근성이 무엇을 의미하는지를 설명한다. <a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance">준수 이해</a>는 접근성 지원의 개념을 보다 더 자세히 설명한다.
       </p>
       <section id="interpreting-normative-requirements">
         <div class="header-wrapper">
@@ -2481,7 +2488,7 @@
             <h4 id="x5-2-2-full-pages"><bdi class="secno">5.2.2 </bdi>Full pages</h4>
             <a class="self-link" href="#cc2" aria-label="섹션 고유링크 5.2.2"></a>
           </div>
-          <p><a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-2" title="satisfying all the requirements of a given standard, guideline or specification">Conformance</a> (and conformance level) is for full <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-13" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 자원(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 자원">Web page(s)</a> only, and cannot be achieved if part of a Web page is excluded.
+          <p><a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-2" title="표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것">준수</a> (and conformance level) is for full <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-13" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 자원(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 자원">Web page(s)</a> only, and cannot be achieved if part of a Web page is excluded.
           </p>
           <div class="note" role="note" id="issue-container-generatedID-47">
             <div role="heading" class="note-title marker" id="h-note-47" aria-level="5"><span>침고 1</span></div>
@@ -2490,7 +2497,7 @@
           </div>
           <div class="note" role="note" id="issue-container-generatedID-48">
             <div role="heading" class="note-title marker" id="h-note-48" aria-level="5"><span>침고 2</span></div>
-            <p>Authors of Web pages that cannot conform due to content outside of the author's control may consider a <a href="#conformance-partial">Statement of Partial Conformance</a>.
+            <p>Authors of Web pages that cannot conform due to content outside of the author's control may consider a <a href="#conformance-partial">Statement of Partial 준수</a>.
             </p>
           </div>
           <div class="note" role="note" id="issue-container-generatedID-49">
@@ -2745,7 +2752,7 @@
         </dd>
         <dt><dfn data-lt="accessibility-supported|accessibility support|accessibility supported" id="dfn-accessibility-supported" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">접근성 지원</dfn></dt>
         <dd>
-          <p>supported by users' <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-5" title="hardware and/or software that acts as a user agent, or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents">assistive technologies</a> as well as the accessibility features in browsers and other <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-5" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">user agents</a></p>
+          <p>supported by users' <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-5" title="사용자 에이전트 역할을 하거나 주류 사용자 에이전트와 함께 작동하며, 주류 사용자 에이전트가 제공하는 것 이상의, 장애를 지닌 사용자의 요구사항을 충족하는 기능을 제공하는 하드웨어나 소프트웨어">보조 기술</a> as well as the accessibility features in browsers and other <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-5" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">사용자 에이전트</a></p>
           <p>To qualify as an accessibility-supported use of a Web content technology (or feature of a technology), both 1 and 2 must be satisfied for a Web content technology (or feature):</p>
           <ol>
             <li>
@@ -3046,9 +3053,9 @@
             <li>solving of puzzles.</li>
           </ul>
         </dd>
-        <dt><dfn data-lt="conform|conformance" id="dfn-conform" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">conformance</dfn></dt>
+        <dt><dfn data-lt="conform|conformance" id="dfn-conform" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">준수</dfn></dt>
         <dd>
-          <p>satisfying all the requirements of a given standard, guideline or specification</p>
+          <p>표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것</p>
         </dd>
         <dt><dfn data-lt="conforming alternate versions|conforming alternate version" id="dfn-conforming-alternate-versions" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">conforming alternate version</dfn></dt>
         <dd>
@@ -3382,10 +3389,10 @@
         </dd>
         <dt><dfn id="dfn-informative" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">informative</dfn></dt>
         <dd>
-          <p>for information purposes and not required for conformance</p>
+          <p>for information purposes and not required for 준수</p>
           <div class="note" role="note" id="issue-container-generatedID-108">
             <div role="heading" class="note-title marker" id="h-note-108" aria-level="3"><span>참고</span></div>
-            <p>Content required for <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-3" title="satisfying all the requirements of a given standard, guideline or specification">conformance</a> is referred to as "<a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-2" title="required for conformance">normative</a>."</p>
+            <p>Content required for <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-3" title="표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것">준수</a> is referred to as "<a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-2" title="required for conformance">normative</a>."</p>
           </div>
         </dd>
         <dt><dfn id="dfn-input-error" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">입력 오류</dfn></dt>
@@ -3452,7 +3459,7 @@
           <p><a href="#dfn-text" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-10" title="프로그래밍 방식으로 결정될 수 있는 문자들의 순서로서, 그 순서는 인간 언어로 무언가를 표현한다.">텍스트</a> or other component with a <a href="#dfn-text-alternative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-text-alternative-3" title="텍스트 아닌 콘텐츠와 프로그래밍 방식으로 연계되어 있거나 텍스트 아닌 콘텐츠와 프로그래밍 방식으로 연계된 텍스트로부터 참고되는 텍스트. 프로그래밍 방식으로 연계된 텍스트는 텍스트 아닌 콘텐츠에서 위치를 프로그래밍 방식으로 결정할 수 있는 텍스트">대체 텍스트</a> that is presented to a user to identify a component within Web <a href="#dfn-content" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-content-3" title="콘텐츠의 구조, 표현 및 상호 작용을 정의하는 코드나 마크업을 포함하여 사용자 에이전트를 통해 사용자에게 전달되는 정보 및 감각 경험">content</a></p>
           <div class="note" role="note" id="issue-container-generatedID-112">
             <div role="heading" class="note-title marker" id="h-note-112" aria-level="3"><span>침고 1</span></div>
-            <p>A label is presented to all users whereas the <a href="#dfn-name" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-name-4" title="text by which software can identify a component within Web content to the user">name</a> may be hidden and only exposed by assistive technology. In many (but not all) cases
+            <p>A label is presented to all users whereas the <a href="#dfn-name" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-name-4" title="소프트웨어가 사용자에게 웹 콘텐츠 내의 구성요소를 식별할 수 있도록 해 주는 텍스트">이름</a> may be hidden and only exposed by assistive technology. In many (but not all) cases
               the name and the label are the same.
             </p>
           </div>
@@ -3551,7 +3558,7 @@
           </p>
           <div class="note" role="note" id="issue-container-generatedID-122">
             <div role="heading" class="note-title marker" id="h-note-122" aria-level="3"><span>침고 1</span></div>
-            <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-8" title="the content would not conform if that technology is turned off or is not supported">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-9" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">user agents</a>, including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-6" title="hardware and/or software that acts as a user agent, or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents">assistive technologies</a>.
+            <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-8" title="the content would not conform if that technology is turned off or is not supported">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-9" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">사용자 에이전트</a>, including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-6" title="사용자 에이전트 역할을 하거나 주류 사용자 에이전트와 함께 작동하며, 주류 사용자 에이전트가 제공하는 것 이상의, 장애를 지닌 사용자의 요구사항을 충족하는 기능을 제공하는 하드웨어나 소프트웨어">보조 기술</a>.
             </p>
           </div>
           <div class="note" role="note" id="issue-container-generatedID-123">
@@ -3612,7 +3619,7 @@
         </dd>
         <dt><dfn id="dfn-normative" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">normative</dfn></dt>
         <dd>
-          <p>required for conformance</p>
+          <p>required for 준수</p>
           <div class="note" role="note" id="issue-container-generatedID-128">
             <div role="heading" class="note-title marker" id="h-note-128" aria-level="3"><span>침고 1</span></div>
             <p>One may conform in a variety of well-defined ways to this document.
@@ -3620,7 +3627,7 @@
           </div>
           <div class="note" role="note" id="issue-container-generatedID-129">
             <div role="heading" class="note-title marker" id="h-note-129" aria-level="3"><span>침고 2</span></div>
-            <p>Content identified as "<a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-2" title="for information purposes and not required for conformance">informative</a>" or "non-normative" is never required for <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-4" title="satisfying all the requirements of a given standard, guideline or specification">conformance</a>.
+            <p>Content identified as "<a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-2" title="for information purposes and not required for conformance">informative</a>" or "non-normative" is never required for <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-4" title="표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것">준수</a>.
             </p>
           </div>
         </dd>
@@ -3701,7 +3708,7 @@
         </dt>
         <dd>
           <p>determined by software from author-supplied data provided in a way that different
-            <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-10" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">user agents</a>, including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-7" title="hardware and/or software that acts as a user agent, or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents">assistive technologies</a>, can extract and present this information to users in different modalities
+            <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-10" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">사용자 에이전트</a>, including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-7" title="사용자 에이전트 역할을 하거나 주류 사용자 에이전트와 함께 작동하며, 주류 사용자 에이전트가 제공하는 것 이상의, 장애를 지닌 사용자의 요구사항을 충족하는 기능을 제공하는 하드웨어나 소프트웨어">보조 기술</a>, can extract and present this information to users in different modalities
           </p>
           <aside class="example" id="example-19">
             <div class="marker">예제 1</div>
@@ -3735,7 +3742,7 @@
             </p>
           </div>
         </dd>
-        <dt><dfn id="dfn-programmatically-set" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">programmatically set</dfn></dt>
+        <dt><dfn id="dfn-programmatically-set" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">프로그래밍 방식으로 설정된</dfn></dt>
         <dd>
           <p>set by software using methods that are supported by user agents, including assistive
             technologies
@@ -3856,10 +3863,10 @@
         <dt><dfn id="dfn-relied-upon" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">relied upon</dfn> (technologies that are)
         </dt>
         <dd>
-          <p>the content would not <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-5" title="satisfying all the requirements of a given standard, guideline or specification">conform</a> if that <a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-7" title="사용자 에이전트가 렌더링, 재생 또는 실행할 인코딩 명령을 위한 메커니즘">기술</a> is turned off or is not supported
+          <p>the content would not <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-5" title="표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것">conform</a> if that <a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-7" title="사용자 에이전트가 렌더링, 재생 또는 실행할 인코딩 명령을 위한 메커니즘">기술</a> is turned off or is not supported
           </p>
         </dd>
-        <dt><dfn id="dfn-role" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">role</dfn></dt>
+        <dt><dfn id="dfn-role" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">역할</dfn></dt>
         <dd>
           <p>text or number by which software can identify the function of a component within Web
             content
@@ -4026,7 +4033,7 @@
         <dt><dfn data-lt="technologies|web technology|web content technology|web content technologies|technology" id="dfn-technologies" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">기술</dfn> (Web content)
         </dt>
         <dd>
-          <p><a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-16" title="결과에 도달하기 위한 과정이나 기법">매커니즘</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-11" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">user agents</a></p>
+          <p><a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-16" title="결과에 도달하기 위한 과정이나 기법">매커니즘</a> for encoding instructions to be rendered, played or executed by <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-11" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">사용자 에이전트</a></p>
           <div class="note" role="note" id="issue-container-generatedID-147">
             <div role="heading" class="note-title marker" id="h-note-147" aria-level="3"><span>침고 1</span></div>
             <p>As used in these guidelines "Web Technology" and the word "technology" (when used
@@ -4095,7 +4102,7 @@
           <p>사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어</p>
           <aside class="example" id="example-36">
             <div class="marker">예제</div>
-            <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-8" title="hardware and/or software that acts as a user agent, or along with a mainstream user agent, to provide functionality to meet the requirements of users with disabilities that go beyond those offered by mainstream user agents">assistive technologies</a> — that help in retrieving, rendering, and interacting with Web content.
+            <p>Web browsers, media players, plug-ins, and other programs — including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-8" title="사용자 에이전트 역할을 하거나 주류 사용자 에이전트와 함께 작동하며, 주류 사용자 에이전트가 제공하는 것 이상의, 장애를 지닌 사용자의 요구사항을 충족하는 기능을 제공하는 하드웨어나 소프트웨어">보조 기술</a> — that help in retrieving, rendering, and interacting with Web content.
             </p>
           </aside>
         </dd>
@@ -4546,7 +4553,7 @@
           <a href="#ref-for-dfn-accessibility-supported-1" title="§ 2.5.4 움직임 기반 실행">§ 2.5.4 움직임 기반 실행</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-accessibility-supported-2" title="§ 5. Conformance">§ 5. Conformance</a>
+          <a href="#ref-for-dfn-accessibility-supported-2" title="§ 5. Conformance">§ 5. 준수</a>
         </li>
         <li>
           <a href="#ref-for-dfn-accessibility-supported-3" title="§ 5.2.4 Only Accessibility-Supported Ways of Using Technologies">§ 5.2.4 Only Accessibility-Supported Ways of Using Technologies</a>
@@ -4624,10 +4631,10 @@
           <a href="#ref-for-dfn-assistive-technologies-2" title="§ 1.4.4 Resize Text">§ 1.4.4 Resize Text</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-assistive-technologies-3" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 Name, Role, Value</a>
+          <a href="#ref-for-dfn-assistive-technologies-3" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 이름, 역할, 값</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-assistive-technologies-4" title="§ 4.1.3 Status Messages">§ 4.1.3 Status Messages</a>
+          <a href="#ref-for-dfn-assistive-technologies-4" title="§ 4.1.3 Status Messages">§ 4.1.3 상태 메시지</a>
         </li>
         <li>
           <a href="#ref-for-dfn-assistive-technologies-5" title="§ 6. Glossary">§ 6. Glossary</a> 
@@ -4805,7 +4812,7 @@
       <p><b>Referenced in:</b></p>
       <ul>
         <li>
-          <a href="#ref-for-dfn-conform-1" title="§ 5. Conformance">§ 5. Conformance</a>
+          <a href="#ref-for-dfn-conform-1" title="§ 5. Conformance">§ 5. 준수</a>
         </li>
         <li>
           <a href="#ref-for-dfn-conform-2" title="§ 5.2.2 Full pages">§ 5.2.2 Full pages</a>
@@ -5456,7 +5463,7 @@
           <a href="#ref-for-dfn-name-2" title="§ 2.5.3 이름 안의 레이블">§ 2.5.3 이름 안의 레이블</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-name-3" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 Name, Role, Value</a>
+          <a href="#ref-for-dfn-name-3" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 이름, 역할, 값</a>
         </li>
         <li>
           <a href="#ref-for-dfn-name-4" title="§ 6. Glossary">§ 6. Glossary</a>
@@ -5683,10 +5690,10 @@
           <a href="#ref-for-dfn-programmatically-determinable-6" title="§ 3.1.2 Language of Parts">§ 3.1.2 부분적인 언어 표시</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-programmatically-determinable-7" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 Name, Role, Value</a>
+          <a href="#ref-for-dfn-programmatically-determinable-7" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 이름, 역할, 값</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-programmatically-determinable-8" title="§ 4.1.3 Status Messages">§ 4.1.3 Status Messages</a>
+          <a href="#ref-for-dfn-programmatically-determinable-8" title="§ 4.1.3 Status Messages">§ 4.1.3 상태 메시지</a>
         </li>
         <li>
           <a href="#ref-for-dfn-programmatically-determinable-9" title="§ 6. Glossary">§ 6. Glossary</a> 
@@ -5715,7 +5722,7 @@
       <p><b>Referenced in:</b></p>
       <ul>
         <li>
-          <a href="#ref-for-dfn-programmatically-set-1" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 Name, Role, Value</a>
+          <a href="#ref-for-dfn-programmatically-set-1" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 이름, 역할, 값</a>
         </li>
       </ul>
     </div>
@@ -5802,7 +5809,7 @@
       <p><b>Referenced in:</b></p>
       <ul>
         <li>
-          <a href="#ref-for-dfn-relied-upon-1" title="§ 5. Conformance">§ 5. Conformance</a>
+          <a href="#ref-for-dfn-relied-upon-1" title="§ 5. Conformance">§ 5. 준수</a>
         </li>
         <li>
           <a href="#ref-for-dfn-relied-upon-2" title="§ 5.2.4 Only Accessibility-Supported Ways of Using Technologies">§ 5.2.4 Only Accessibility-Supported Ways of Using Technologies</a>
@@ -5831,10 +5838,10 @@
       <p><b>Referenced in:</b></p>
       <ul>
         <li>
-          <a href="#ref-for-dfn-role-1" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 Name, Role, Value</a>
+          <a href="#ref-for-dfn-role-1" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 이름, 역할, 값</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-role-2" title="§ 4.1.3 Status Messages">§ 4.1.3 Status Messages</a>
+          <a href="#ref-for-dfn-role-2" title="§ 4.1.3 Status Messages">§ 4.1.3 상태 메시지</a>
         </li>
       </ul>
     </div>
@@ -5988,7 +5995,7 @@
       <p><b>Referenced in:</b></p>
       <ul>
         <li>
-          <a href="#ref-for-dfn-status-messages-1" title="§ 4.1.3 Status Messages">§ 4.1.3 Status Messages</a>
+          <a href="#ref-for-dfn-status-messages-1" title="§ 4.1.3 Status Messages">§ 4.1.3 상태 메시지</a>
         </li>
       </ul>
     </div>
@@ -6206,7 +6213,7 @@
           <a href="#ref-for-dfn-user-agents-3" title="§ 2.5.8 포인터 입력 크기 (최소)">§ 2.5.8 포인터 입력 크기 (최소)</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-user-agents-4" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 Name, Role, Value</a>
+          <a href="#ref-for-dfn-user-agents-4" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 이름, 역할, 값</a>
         </li>
         <li>
           <a href="#ref-for-dfn-user-agents-5" title="§ 6. Glossary">§ 6. Glossary</a> 
@@ -6277,7 +6284,7 @@
           <a href="#ref-for-dfn-user-interface-components-12" title="§ 3.2.2 On Input">§ 3.2.2 입력 상황</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-user-interface-components-13" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 Name, Role, Value</a>
+          <a href="#ref-for-dfn-user-interface-components-13" title="§ 4.1.2 Name, Role, Value">§ 4.1.2 이름, 역할, 값</a>
         </li>
         <li>
           <a href="#ref-for-dfn-user-interface-components-14" title="§ 6. Glossary">§ 6. Glossary</a>
