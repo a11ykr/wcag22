@@ -249,8 +249,8 @@
                 <li class="tocline"><a class="tocxref" href="#help"><bdi class="secno">3.3.5 </bdi>도움말</a></li>
                 <li class="tocline"><a class="tocxref" href="#error-prevention-all"><bdi class="secno">3.3.6 </bdi>오류 예방 (전체)</a></li>
                 <li class="tocline"><a class="tocxref" href="#redundant-entry"><bdi class="secno">3.3.7 </bdi>Redundant Entry</a></li>
-                <li class="tocline"><a class="tocxref" href="#accessible-authentication-minimum"><bdi class="secno">3.3.8 </bdi>Accessible Authentication (최소)</a></li>
-                <li class="tocline"><a class="tocxref" href="#accessible-authentication-enhanced"><bdi class="secno">3.3.9 </bdi>Accessible Authentication (향상된)</a></li>
+                <li class="tocline"><a class="tocxref" href="#accessible-authentication-minimum"><bdi class="secno">3.3.8 </bdi>접근 가능한 인증 (최소)</a></li>
+                <li class="tocline"><a class="tocxref" href="#accessible-authentication-enhanced"><bdi class="secno">3.3.9 </bdi>접근 가능한 인증 (향상된)</a></li>
               </ol>
             </li>
           </ol>
@@ -2305,58 +2305,61 @@
         </section>
         <section class="guideline" id="accessible-authentication-minimum">
           <div class="header-wrapper">
-            <h4 id="x3-3-8-accessible-authentication-minimum"><bdi class="secno">성공 기준 3.3.8 </bdi>Accessible Authentication (최소)</h4>
+            <h4 id="x3-3-8-accessible-authentication-minimum"><bdi class="secno">성공 기준 3.3.8 </bdi>접근 가능한 인증 (최소)</h4>
             <a class="self-link" href="#accessible-authentication-minimum" aria-label="섹션 고유링크 3.3.8"></a>
           </div>
           <div class="doclinks">
-            <a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html">이해 Accessible Authentication (최소)</a> <span class="screenreader">|</span> <br>
-            <a href="https://www.w3.org/WAI/WCAG22/quickref/#accessible-authentication-minimum">기법 Accessible Authentication (최소)</a>
+            <a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-minimum.html">이해 접근 가능한 인증 (최소)</a> <span class="screenreader">|</span> <br>
+            <a href="https://www.w3.org/WAI/WCAG22/quickref/#accessible-authentication-minimum">기법 접근 가능한 인증 (최소)</a>
           </div>
           <p class="conformance-level">(Level AA)</p>
           <p class="change">[신규]</p>
-          <p>A <a href="#dfn-cognitive-function-test" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-cognitive-function-test-1" title="[신규]">cognitive function test</a> (such as remembering a password or solving a puzzle) is not required for any step in an authentication <a href="#dfn-processes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-processes-3" title="활동을 완료하기 위해 각 작업이 필요한 일련의 사용자 작업">과정</a> unless that step provides at least one of the following:</p>
+          <p>
+            다음 중 하나 이상을 제공하지 않는 한 인증 <a href="#dfn-processes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-processes-3" title="활동을 완료하기 위해 각 작업이 필요한 일련의 사용자 작업">과정</a>의 어떤 단계에서도 <a href="#dfn-cognitive-function-test" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-cognitive-function-test-1" title="[신규]">인지 기능 검사</a>(예: 비밀번호 기억 또는 퍼즐 풀기)를 요구할 수 없다.
+          </p>
           <dl>
-            <dt>Alternative</dt>
-            <dd>Another authentication method that does not rely on a cognitive function test.</dd>
+            <dt>대체 수단</dt>
+            <dd>인지 기능 검사에 의존하지 않는 또 다른 인증 방법을 제공하는 경우</dd>
             <dt>매커니즘</dt>
-            <dd>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-13" title="결과에 도달하기 위한 과정이나 기법">매커니즘</a> is available to assist the user in completing the cognitive function test.</dd>
-            <dt>Object Recognition</dt>
-            <dd>The cognitive function test is to recognize objects.</dd>
-            <dt>Personal Content</dt>
-            <dd>The cognitive function test is to identify <a href="#dfn-non-text-content" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-non-text-content-2" title="프로그래밍 방식으로 결정될 수 있는 문자 시퀀스가 아니거나 시퀀스가 인간 언어로 무언가를 표현하지 않는 콘텐츠">텍스트가 아닌 콘텐츠</a> the user provided to the Web site.</dd>
+            <dd>사용자가 인지 기능 검사를 완수하는 데 도움을 주는 <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-13" title="결과에 도달하기 위한 과정이나 기법">매커니즘</a>을 제공하는 경우</dd>
+            <dt>객체 인식</dt>
+            <dd>인지 기능 검사가 사물을 인식하는 것인 경우</dd>
+            <dt>개인 콘텐츠</dt>
+            <dd>인지 기능 검사가 사용자가 웹 사이트에 제공한 <a href="#dfn-non-text-content" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-non-text-content-2" title="프로그래밍 방식으로 결정될 수 있는 문자 시퀀스가 아니거나 시퀀스가 인간 언어로 무언가를 표현하지 않는 콘텐츠">텍스트가 아닌 콘텐츠</a>를 식별하는 것일 경우</dd>
           </dl>
           <div class="note" role="note" id="issue-container-generatedID-41">
             <div role="heading" class="note-title marker" id="h-note-41" aria-level="5"><span>침고 1</span></div>
-            <p>"Object recognition" and "Personal content" may be represented by images, video, or audio.
-            </p>
+            <p>"객체 인식" 및 "개인 콘텐츠"는 이미지, 동영상, 오디오 등으로 표현될 수 있다.</p>
           </div>
           <div class="note" role="note" id="issue-container-generatedID-42">
             <div role="heading" class="note-title marker" id="h-note-42" aria-level="5"><span>침고 2</span></div>
-            <div class="">Examples of mechanisms that satisfy this criterion include:
+            <div class="">이 기준을 충족하는 메커니즘의 예는 다음과 같다.
               <ol>
-                <li>support for password entry by password managers to reduce memory need, and</li>
-                <li>copy and paste to reduce the cognitive burden of re-typing.</li>
+                <li>메모리 절감을 위해 비밀번호 관리자의 비밀번호 입력 지원</li>
+                <li>재입력의 인지적 부담을 줄이기 위해 복사하여 붙여넣기</li>
               </ol>
             </div>
           </div>
         </section>
         <section class="guideline" id="accessible-authentication-enhanced">
           <div class="header-wrapper">
-            <h4 id="x3-3-9-accessible-authentication-enhanced"><bdi class="secno">성공 기준 3.3.9 </bdi>Accessible Authentication (향상된)</h4>
+            <h4 id="x3-3-9-accessible-authentication-enhanced"><bdi class="secno">성공 기준 3.3.9 </bdi>접근 가능한 인증 (향상된)</h4>
             <a class="self-link" href="#accessible-authentication-enhanced" aria-label="섹션 고유링크 3.3.9"></a>
           </div>
           <div class="doclinks">
-            <a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-enhanced.html">이해 Accessible Authentication (향상된)</a> <span class="screenreader">|</span> <br>
-            <a href="https://www.w3.org/WAI/WCAG22/quickref/#accessible-authentication-enhanced">기법 Accessible Authentication (향상된)</a>
+            <a href="https://www.w3.org/WAI/WCAG22/Understanding/accessible-authentication-enhanced.html">접근 가능한 인증 (향상된) 이해</a> <span class="screenreader">|</span> <br>
+            <a href="https://www.w3.org/WAI/WCAG22/quickref/#accessible-authentication-enhanced">접근 가능한 인증 (향상된) 기법</a>
           </div>
           <p class="conformance-level">(Level AAA)</p>
           <p class="change">[신규]</p>
-          <p>A <a href="#dfn-cognitive-function-test" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-cognitive-function-test-2" title="[신규]">cognitive function test</a> (such as remembering a password or solving a puzzle) is not required for any step in an authentication <a href="#dfn-processes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-processes-4" title="활동을 완료하기 위해 각 작업이 필요한 일련의 사용자 작업">과정</a> unless that step provides at least one of the following:</p>
+          <p>
+            다음 중 하나 이상을 제공하지 않는 한 인증 <a href="#dfn-processes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-processes-3" title="활동을 완료하기 위해 각 작업이 필요한 일련의 사용자 작업">과정</a>의 어떤 단계에서도 <a href="#dfn-cognitive-function-test" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-cognitive-function-test-1" title="[신규]">인지 기능 검사</a>(예: 비밀번호 기억 또는 퍼즐 풀기)를 요구할 수 없다.
+          </p>
           <dl>
-            <dt>Alternative</dt>
-            <dd>Another authentication method that does not rely on a cognitive function test.</dd>
+            <dt>대체 수단</dt>
+            <dd>인지 기능 검사에 의존하지 않는 또 다른 인증 방법을 제공하는 경우</dd>
             <dt>매커니즘</dt>
-            <dd>A <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-14" title="결과에 도달하기 위한 과정이나 기법">매커니즘</a> is available to assist the user in completing the cognitive function test.</dd>
+            <dd>사용자가 인지 기능 검사를 완수하는 데 도움을 주는 <a href="#dfn-mechanism" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-mechanism-13" title="결과에 도달하기 위한 과정이나 기법">매커니즘</a>을 제공하는 경우</dd>
           </dl>
         </section>
       </section>
@@ -4317,7 +4320,7 @@
         <li>2020-01-14: Added <q>초점 표시 (향상된)</q>, later renamed to Focus Appearance (향상된), later removed.
         </li>
         <li>2020-03-10: Renamed <q>Pointer Target Spacing</q> to <q>포인터 입력 크기 (최소)</q></li>
-        <li>2020-03-30: Added <a href="#accessible-authentication-minimum">Accessible Authentication (최소)</a>.
+        <li>2020-03-30: Added <a href="#accessible-authentication-minimum">접근 가능한 인증 (최소)</a>.
         </li>
         <li>2020-05-27: Added <q>Dragging</q> (later renamed <a href="#dragging-movements">끌기 동작</a>).
         </li>
@@ -4787,10 +4790,10 @@
       <p><b>Referenced in:</b></p>
       <ul>
         <li>
-          <a href="#ref-for-dfn-cognitive-function-test-1" title="§ 3.3.8 Accessible Authentication (최소)">§ 3.3.8 Accessible Authentication (최소)</a>
+          <a href="#ref-for-dfn-cognitive-function-test-1" title="§ 3.3.8 Accessible Authentication (최소)">§ 3.3.8 접근 가능한 인증 (최소)</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-cognitive-function-test-2" title="§ 3.3.9 Accessible Authentication (향상된)">§ 3.3.9 Accessible Authentication (향상된)</a>
+          <a href="#ref-for-dfn-cognitive-function-test-2" title="§ 3.3.9 Accessible Authentication (향상된)">§ 3.3.9 접근 가능한 인증 (향상된)</a>
         </li>
       </ul>
     </div>
@@ -5380,10 +5383,10 @@
           <a href="#ref-for-dfn-mechanism-12" title="§ 3.2.6 Consistent Help">§ 3.2.6 일관된 도움말</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-mechanism-13" title="§ 3.3.8 Accessible Authentication (최소)">§ 3.3.8 Accessible Authentication (최소)</a>
+          <a href="#ref-for-dfn-mechanism-13" title="§ 3.3.8 Accessible Authentication (최소)">§ 3.3.8 접근 가능한 인증 (최소)</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-mechanism-14" title="§ 3.3.9 Accessible Authentication (향상된)">§ 3.3.9 Accessible Authentication (향상된)</a>
+          <a href="#ref-for-dfn-mechanism-14" title="§ 3.3.9 Accessible Authentication (향상된)">§ 3.3.9 접근 가능한 인증 (향상된)</a>
         </li>
         <li>
           <a href="#ref-for-dfn-mechanism-15" title="§ 6. Glossary">§ 6. Glossary</a> 
@@ -5483,7 +5486,7 @@
           <a href="#ref-for-dfn-non-text-content-1" title="§ 1.1.1 텍스트가 아닌 콘텐츠">§ 1.1.1 텍스트가 아닌 콘텐츠</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-non-text-content-2" title="§ 3.3.8 Accessible Authentication (최소)">§ 3.3.8 Accessible Authentication (최소)</a>
+          <a href="#ref-for-dfn-non-text-content-2" title="§ 3.3.8 Accessible Authentication (최소)">§ 3.3.8 접근 가능한 인증 (최소)</a>
         </li>
         <li>
           <a href="#ref-for-dfn-non-text-content-3" title="§ 6. Glossary">§ 6. Glossary</a>
@@ -5639,10 +5642,10 @@
           <a href="#ref-for-dfn-processes-2" title="§ 3.3.7 Redundant Entry">§ 3.3.7 Redundant Entry</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-processes-3" title="§ 3.3.8 Accessible Authentication (최소)">§ 3.3.8 Accessible Authentication (최소)</a>
+          <a href="#ref-for-dfn-processes-3" title="§ 3.3.8 Accessible Authentication (최소)">§ 3.3.8 접근 가능한 인증 (최소)</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-processes-4" title="§ 3.3.9 Accessible Authentication (향상된)">§ 3.3.9 Accessible Authentication (향상된)</a>
+          <a href="#ref-for-dfn-processes-4" title="§ 3.3.9 Accessible Authentication (향상된)">§ 3.3.9 접근 가능한 인증 (향상된)</a>
         </li>
         <li>
           <a href="#ref-for-dfn-processes-5" title="§ 5.2.3 Complete processes">§ 5.2.3 Complete processes</a>
