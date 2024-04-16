@@ -17,7 +17,8 @@
     </p>
     <div class="head">
       <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72"></a></p>
-      <p>이 번역본은 <abbr title="World Wide Web Consortium">W3C</abbr>의 인증을 받지 않은 비공식 문서이며, 오류가 있을 수 있습니다. 번역 내용과 관련하여 블확실한 부분은 <a href="https://www.w3.org/TR/WCAG22">WCAG 2.2 원본</a>을 참고하시기 바랍니다.
+      <p style="border: 2px solid red;margin-right:120px;padding:10px;">
+        이 번역본은 현재 작성 중입니다. <abbr title="World Wide Web Consortium">W3C</abbr>의 인증을 받지 않은 비공식 문서이며, 오류가 있을 수 있습니다. 참고용으로 제작하였으므로 불명확한 부분은 <a href="https://www.w3.org/TR/WCAG22">WCAG 2.2 원본</a>을 참고하시기 바랍니다.
       </p>
       <h1 id="title" class="title">Web Content Accessibility Guidelines (WCAG) 2.2</h1>
       <p id="w3c-state"><a href="https://www.w3.org/standards/types#REC">W3C 권장 표준</a> <time class="dt-published" datetime="2023-10-05">2023년 10월 5일</time></p>
@@ -269,19 +270,19 @@
         <li class="tocline"><a class="tocxref" href="#conformance"><bdi class="secno">5. </bdi>준수</a>
           <ol class="toc">
             <li class="tocline"><a class="tocxref" href="#interpreting-normative-requirements"><bdi class="secno">5.1 </bdi>Interpreting Normative Requirements</a></li>
-            <li class="tocline"><a class="tocxref" href="#conformance-reqs"><bdi class="secno">5.2 </bdi>Conformance Requirements</a>
+            <li class="tocline"><a class="tocxref" href="#conformance-reqs"><bdi class="secno">5.2 </bdi>준수 요구사항</a>
               <ol class="toc">
-                <li class="tocline"><a class="tocxref" href="#cc1"><bdi class="secno">5.2.1 </bdi>Conformance Level</a></li>
-                <li class="tocline"><a class="tocxref" href="#cc2"><bdi class="secno">5.2.2 </bdi>Full pages</a></li>
-                <li class="tocline"><a class="tocxref" href="#cc3"><bdi class="secno">5.2.3 </bdi>Complete processes</a></li>
-                <li class="tocline"><a class="tocxref" href="#cc4"><bdi class="secno">5.2.4 </bdi>Only Accessibility-Supported Ways of Using Technologies</a></li>
-                <li class="tocline"><a class="tocxref" href="#cc5"><bdi class="secno">5.2.5 </bdi>Non-Interference</a></li>
+                <li class="tocline"><a class="tocxref" href="#cc1"><bdi class="secno">5.2.1 </bdi>준수 수준</a></li>
+                <li class="tocline"><a class="tocxref" href="#cc2"><bdi class="secno">5.2.2 </bdi>전체 페이지</a></li>
+                <li class="tocline"><a class="tocxref" href="#cc3"><bdi class="secno">5.2.3 </bdi>전체 과정</a></li>
+                <li class="tocline"><a class="tocxref" href="#cc4"><bdi class="secno">5.2.4 </bdi>접근성 지원 기술 활용 방법</a></li>
+                <li class="tocline"><a class="tocxref" href="#cc5"><bdi class="secno">5.2.5 </bdi>불간섭</a></li>
               </ol>
             </li>
-            <li class="tocline"><a class="tocxref" href="#conformance-claims"><bdi class="secno">5.3 </bdi>Conformance Claims (Optional) </a>
+            <li class="tocline"><a class="tocxref" href="#conformance-claims"><bdi class="secno">5.3 </bdi>준수 선언 (선택사항)</a>
               <ol class="toc">
-                <li class="tocline"><a class="tocxref" href="#conformance-required"><bdi class="secno">5.3.1 </bdi>Required Components of a Conformance Claim</a></li>
-                <li class="tocline"><a class="tocxref" href="#conformance-optional"><bdi class="secno">5.3.2 </bdi>Optional Components of a Conformance Claim </a></li>
+                <li class="tocline"><a class="tocxref" href="#conformance-required"><bdi class="secno">5.3.1 </bdi>준수 선언의 필수 구성요소</a></li>
+                <li class="tocline"><a class="tocxref" href="#conformance-optional"><bdi class="secno">5.3.2 </bdi>준수 선언의 선택적 구성요소</a></li>
               </ol>
             </li>
             <li class="tocline"><a class="tocxref" href="#conformance-partial"><bdi class="secno">5.4 </bdi>Statement of Partial Conformance - Third Party Content</a></li>
@@ -2449,171 +2450,191 @@
           <h3 id="x5-1-interpreting-normative-requirements"><bdi class="secno">5.1 </bdi>Interpreting Normative Requirements</h3>
           <a class="self-link" href="#interpreting-normative-requirements" aria-label="섹션 고유링크 5.1"></a>
         </div>
-        <p>The main content of WCAG 2.2 is <a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-1" title="required for conformance">normative</a> and defines requirements that impact conformance claims. Introductory material, appendices, sections marked as "non-normative", diagrams, examples, and notes are <a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-1" title="for information purposes and not required for conformance">informative</a> (non-normative). Non-normative material provides advisory information to help interpret the guidelines but does not create requirements that impact a conformance claim.
+        <p>
+          WCAG 2.2의 주요 내용은 <a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-1" title="준수에 필요한">규범</a>이며, 준수 선언에 영향을 미치는 요구사항을 정의하고 있다. 소개 자료, 부록, “비규범”으로 표시된 섹션, 다이어그램, 예제 및 참고는 <a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-1" title="정보 제공만을 목적으로 하며, 준수(conformance)에는 꼭 필요하지는 않은">정보성</a>의(비규범적) 것이다. 비규범 자료는 지침을 해석하는 데 도움이 되는 조언적인 정보를 제공하지만 준수 선언(conformance claim)에 영향을 미치는 요구사항은 아니다.
         </p>
-        <p>The key words <em class="rfc2119">MAY</em>, <em class="rfc2119">MUST</em>, <em class="rfc2119">MUST NOT</em>, <em class="rfc2119">NOT RECOMMENDED</em>, <em class="rfc2119">RECOMMENDED</em>, <em class="rfc2119">SHOULD</em>, and <em class="rfc2119">SHOULD NOT</em> are to be interpreted as described in [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="Key words for use in RFCs to Indicate Requirement Levels">RFC2119</a></cite>].
+        <p>
+          핵심단어인 '~할 수 있다'(<em class="rfc2119">MAY</em>), '반드시 ~해야 한다'(<em class="rfc2119">MUST</em>), '반드시 ~해서는 안 된다'(<em class="rfc2119">MUST NOT</em>), '권장하지 않는다'(<em class="rfc2119">NOT RECOMMENDED</em>), '권장한다'(<em class="rfc2119">RECOMMENDED</em>), '~해야 한다'(<em class="rfc2119">SHOULD</em>), 그리고 '~해서는 안된다'(<em class="rfc2119">SHOULD NOT</em>)는 [<cite><a class="bibref" data-link-type="biblio" href="#bib-rfc2119" title="요구 사항 수준을 나타내기 위해 RFC에서 사용되는 키워드">RFC2119</a></cite>]에 기술된대로 해석되어야 한다.
         </p>
       </section>
       <section id="conformance-reqs">
         <div class="header-wrapper">
-          <h3 id="x5-2-conformance-requirements"><bdi class="secno">5.2 </bdi>Conformance Requirements</h3>
+          <h3 id="x5-2-conformance-requirements"><bdi class="secno">5.2 </bdi>준수 요구사항</h3>
           <a class="self-link" href="#conformance-reqs" aria-label="섹션 고유링크 5.2"></a>
         </div>
-        <p>In order for a Web page to conform to WCAG 2.2, all of the following conformance requirements must be satisfied:</p>
+        <p>웹 페이지가 WCAG 2.2를 준수하려면 다음 준수 요구 사항을 모두 충족해야 한다.</p>
         <section id="cc1">
           <div class="header-wrapper">
-            <h4 id="x5-2-1-conformance-level"><bdi class="secno">5.2.1 </bdi>Conformance Level</h4>
+            <h4 id="x5-2-1-conformance-level"><bdi class="secno">5.2.1 </bdi>준수 수준</h4>
             <a class="self-link" href="#cc1" aria-label="섹션 고유링크 5.2.1"></a>
           </div>
-          <p>One of the following levels of conformance is met in full.
+          <p>
+            다음의 준수 수준 중 하나를 완전히 준수해야 한다.
           </p>
           <ul>
-            <li id="cc1_A">For Level A conformance (the minimum level of conformance), the <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-12" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 자원(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 자원">웹 페이지</a> <a href="#dfn-satisfies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-satisfies-1" title="the success criterion does not evaluate to &#39;false&#39; when applied to the page">satisfies</a> all the Level A Success Criteria, or a <a href="#dfn-conforming-alternate-versions" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conforming-alternate-versions-1" title="version that">conforming alternate version</a> is provided.</li>
-            <li id="cc1_AA">For Level AA conformance, the Web page satisfies all the Level A and Level AA Success Criteria, or a Level AA conforming alternate version is provided.</li>
-            <li id="cc1_AAA">For Level AAA conformance, the Web page satisfies all the Level A, Level AA and Level AAA Success Criteria, or a Level AAA conforming alternate version is provided.</li>
+            <li id="cc1_A">Level A 준수(최소 준수 수준)의 경우, <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-12" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 자원(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 자원">웹 페이지</a>는 모든 Level A 성공기준을 <a href="#dfn-satisfies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-satisfies-1" title="성공기준을 페이지에 적용할 때 ‘미준수’로 평가되지 않는 경우">충족</a>하거나, Level A를 <a href="#dfn-conforming-alternate-versions" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conforming-alternate-versions-1" title="version that">준수한 대안 버전</a>을 제공해야 한다.</li>
+            <li id="cc1_AA">Level AA 준수의 경우, 웹 페이지는 모든 Level A 및 Level AA 성공기준을 충족하거나, Level AA를 준수한 대안 버전을 제공해야 한다.</li>
+            <li id="cc1_AAA">Level AAA 준수의 경우, 웹 페이지는 모든 Level A, Level AA 및 Level AAA 성공기준을 충족하거나, Level AAA를 준수한 대안 버전을 제공해야 한다.</li>
           </ul>
           <div class="note" role="note" id="issue-container-generatedID-45">
             <div role="heading" class="note-title marker" id="h-note-45" aria-level="5"><span>침고 1</span></div>
-            <p>Although conformance can only be achieved at the stated levels, authors are encouraged to report (in their claim) any progress toward meeting success criteria from all levels beyond the achieved level of conformance.
+            <p>
+              준수는 진술된 수준에서만 달성할 수 있지만, 저작자는 달성된 준수수준을 초과하는 모든 수준의 성공기준의 준수에 대한 진행 상황(선언에서)을 보고해야 한다.
             </p>
           </div>
           <div class="note" role="note" id="issue-container-generatedID-46">
             <div role="heading" class="note-title marker" id="h-note-46" aria-level="5"><span>침고 2</span></div>
-            <p>It is not recommended that Level AAA conformance be required as a general policy for entire sites because it is not possible to satisfy all Level AAA Success Criteria for some content.
+            <p>
+              일부 콘텐츠의 경우, 모든 Level AAA 성공기준을 충족시키기는 불가능하기 때문에, Level AAA 준수를 전체 사이트에 대한 일반적인 정책으로 요구하는 것은 권장하지 않는다.
             </p>
           </div>
         </section>
         <section id="cc2">
           <div class="header-wrapper">
-            <h4 id="x5-2-2-full-pages"><bdi class="secno">5.2.2 </bdi>Full pages</h4>
+            <h4 id="x5-2-2-full-pages"><bdi class="secno">5.2.2 </bdi>전체 페이지</h4>
             <a class="self-link" href="#cc2" aria-label="섹션 고유링크 5.2.2"></a>
           </div>
-          <p><a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-2" title="표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것">준수</a> (and conformance level) is for full <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-13" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 자원(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 자원">Web page(s)</a> only, and cannot be achieved if part of a Web page is excluded.
+          <p>
+            <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-2" title="표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것">준수</a>(그리고 준수 수준)는 전체 <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-13" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 자원(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 자원">웹 페이지</a>에 적용되며, 웹 페이지의 일부가 제외된 경우는 달성할 수 없다.
           </p>
           <div class="note" role="note" id="issue-container-generatedID-47">
             <div role="heading" class="note-title marker" id="h-note-47" aria-level="5"><span>침고 1</span></div>
-            <p>For the purpose of determining conformance, alternatives to part of a page's content are considered part of the page when the alternatives can be obtained directly from the page, e.g., a long description or an alternative presentation of a video.
+            <p>
+              준수를 결정할 목적인 경우, 한 페이지의 콘텐츠의 일부분에 대한 대체수단은 대체수단이 그 페이지로부터 직접적으로 획득할 수 있을 때 해당 페이지의 일부로 간주된다[예: 긴 설명(long description), 또는 비디오의 대안적인 표현].
             </p>
           </div>
           <div class="note" role="note" id="issue-container-generatedID-48">
             <div role="heading" class="note-title marker" id="h-note-48" aria-level="5"><span>침고 2</span></div>
-            <p>Authors of Web pages that cannot conform due to content outside of the author's control may consider a <a href="#conformance-partial">Statement of Partial 준수</a>.
+            <p>
+              웹 콘텐츠 저작자의 통제 범위를 벗어난 콘텐츠로 인해 준수할 수 없는 웹 페이지의 저작자는 <a href="#conformance-partial">부분 준수 진술</a>을 고려할 수 있다.
             </p>
           </div>
           <div class="note" role="note" id="issue-container-generatedID-49">
             <div role="heading" class="note-title marker" id="h-note-49" aria-level="5"><span>침고 3</span></div>
-            <p>A full page includes each variation of the page that is automatically presented by the page for various screen sizes (e.g. variations in a responsive Web page). Each of these variations needs to conform (or needs to have a conforming alternate version) in order for the entire page to conform.
+            <p>
+              신규(New) 새로운 전체 페이지는 다양한 화면 크기(예: 반응형 웹 페이지의 변형)에서 자동적으로 제시되는 여러 버전의 변형 페이지를 포함한다. 전체 페이지가 준수되기 위해서는 이러한 변형 페이지들 각각이 준수(또는 준수하는 대체수단을 제공)할 필요가 있다.
             </p>
           </div>
         </section>
         <section id="cc3">
           <div class="header-wrapper">
-            <h4 id="x5-2-3-complete-processes"><bdi class="secno">5.2.3 </bdi>Complete processes</h4>
+            <h4 id="x5-2-3-complete-processes"><bdi class="secno">5.2.3 </bdi>전체 과정</h4>
             <a class="self-link" href="#cc3" aria-label="섹션 고유링크 5.2.3"></a>
           </div>
-          <p>When a <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-14" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 자원(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 자원">웹 페이지</a> is one of a series of Web pages presenting a <a href="#dfn-processes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-processes-5" title="활동을 완료하기 위해 각 작업이 필요한 일련의 사용자 작업">과정</a> (i.e., a sequence of steps that need to be completed in order to accomplish an activity), all Web pages in the process conform at the specified level or better. (Conformance is not possible at a particular level if any page in the process does not conform at that level or better.)</p>
+          <p>
+            한 <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-14" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 자원(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 자원">웹 페이지</a>가 어떤 <a href="#dfn-processes" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-processes-5" title="활동을 완료하기 위해 각 작업이 필요한 일련의 사용자 작업">과정</a>을 제시하는 일련의 웹 페이지 중 하나(예: 어떤 활동을 완수하기 위해 필요한 여러 단계들 중 하나)일 때, 그 과정에 있는 모든 웹 페이지는 특정 수준 이상을 준수해야 한다. (해당 과정에 있는 페이지가 특정 수준 이상을 준수하지 못한다면, 전체 페이지는 그 특정 수준을 준수할 수 없다.)
+          </p>
           <aside class="example" id="example-1">
             <div class="marker">예제</div>
-            <p>An online store has a series of pages that are used to select and purchase products. All pages in the series from start to finish (checkout) conform in order for any page that is part of the process to conform.
+            <p>
+              온라인 상점은 제품을 선택하고 구매하기 위하여 사용되는 일련의 페이지가 있다. 그 과정의 일부인 어떤 페이지가 준수되어야 처음부터 끝까지(결제)의 절차의 모든 페이지가 준수된다.
             </p>
           </aside>
         </section>
         <section id="cc4">
           <div class="header-wrapper">
-            <h4 id="x5-2-4-only-accessibility-supported-ways-of-using-technologies"><bdi class="secno">5.2.4 </bdi>Only Accessibility-Supported Ways of Using Technologies</h4>
+            <h4 id="x5-2-4-only-accessibility-supported-ways-of-using-technologies"><bdi class="secno">5.2.4 </bdi>접근성 지원 기술 활용 방법</h4>
             <a class="self-link" href="#cc4" aria-label="섹션 고유링크 5.2.4"></a>
           </div>
-          <p>Only <a href="#dfn-accessibility-supported" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-supported-3" title="사용자의 보조공학뿐만 아니라 브라우저와 다른 사용자 에이전트에 있는 접근성 특성들에 의해 지원된">accessibility-supported</a> ways of using <a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-2" title="사용자 에이전트가 렌더링, 재생 또는 실행할 인코딩 명령을 위한 메커니즘">technologies</a> are <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-2" title="the content would not conform if that technology is turned off or is not supported">relied upon</a> to satisfy the success criteria. Any information or functionality that is provided in a way that is not accessibility supported is also available in a way that is accessibility supported. (See <a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#accessibility-support">Understanding accessibility support</a>.)
+          <p>
+            성공 기준을 충족하기 위해서는 오직 <a href="#dfn-accessibility-supported" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-supported-3" title="사용자의 보조공학뿐만 아니라 브라우저와 다른 사용자 에이전트에 있는 접근성 특성들에 의해 지원된">접근성 지원</a> <a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-2" title="사용자 에이전트가 렌더링, 재생 또는 실행할 인코딩 명령을 위한 메커니즘">기술</a> 활용 방법에만 <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-2" title="해당 기술이 해제되거나 지원하지 않으면, 콘텐츠가 준수되지 않는">의존</a>한다. 접근성을 지원하지 않는 어떤 방법을 제공하는 정보나 기능도 접근성을 지원하는 방법에서 이용 가능하다.(<a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#accessibility-support">접근성 지원 이해</a>를 참고하라.)
           </p>
         </section>
         <section id="cc5">
           <div class="header-wrapper">
-            <h4 id="x5-2-5-non-interference"><bdi class="secno">5.2.5 </bdi>Non-Interference</h4>
+            <h4 id="x5-2-5-non-interference"><bdi class="secno">5.2.5 </bdi>불간섭</h4>
             <a class="self-link" href="#cc5" aria-label="섹션 고유링크 5.2.5"></a>
           </div>
-          <p>If <a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-3" title="사용자 에이전트가 렌더링, 재생 또는 실행할 인코딩 명령을 위한 메커니즘"> technologies </a> are used in a way that is not <a href="#dfn-accessibility-supported" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-supported-4" title="사용자의 보조공학뿐만 아니라 브라우저와 다른 사용자 에이전트에 있는 접근성 특성들에 의해 지원된">접근성 지원</a>, or if they are used in a non-conforming way, then they do not block the ability of users to access the rest of the page. In addition, the <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-15" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 자원(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 자원">웹 페이지</a> as a whole continues to meet the conformance requirements under each  of the following conditions:</p>
+          <p>
+            <a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-3" title="사용자 에이전트가 렌더링, 재생 또는 실행할 인코딩 명령을 위한 메커니즘">기술</a>이 <a href="#dfn-accessibility-supported" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-accessibility-supported-4" title="사용자의 보조공학뿐만 아니라 브라우저와 다른 사용자 에이전트에 있는 접근성 특성들에 의해 지원된">접근성을 지원</a>하지 않는 방식으로 사용되거나 준수하지 못하는 방법으로 사용되는 경우라도, 사용자가 나머지 페이지에 접근하는 기능은 방해받지 않아야 한다. 아울러, 전체 <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-15" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 자원(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 자원">웹 페이지</a>는 다음과 같은 조건들 각각에서 준수 요구사항을 계속 준수해야 한다.
+          </p>
           <ol>
-            <li>when any technology that is not <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-3" title="the content would not conform if that technology is turned off or is not supported">relied upon</a> is turned on in a user agent,
-            </li>
-            <li>when any technology that is not relied upon is turned off in a user agent, and</li>
-            <li>when any technology that is not relied upon is not supported by a user agent</li>
+            <li><a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-2" title="해당 기술이 해제되거나 지원하지 않으면, 콘텐츠가 준수되지 않는">의존</a>하지 않는 기술이 사용자 에이전트에서 설정되어 있는 경우</li>
+            <li>의존하지 않는 기술이 사용자 에이전트에서 해제되어 있는 경우</li>
+            <li>의존하지 않는 기술이 사용자 에이전트에서 지원하지 않는 경우</li>
           </ol>
-          <p>In addition, the following success criteria apply to all content on the page, including content that is not otherwise relied upon to meet conformance, because failure to meet them could interfere with any use of the page:</p>
+          <p>또한 다음의 성공기준은, 준수하지 않아도 되는 콘텐츠를 포함하여, 페이지의 모든 콘텐츠에 적용된다. 다음과 같은 콘텐츠를 준수하지 못한 경우, 페이지를 사용하는 데 방해가 될 수 있다.</p>
           <ul>
-            <li><strong>1.4.2 - 오디오 제어</strong>,
-            </li>
-            <li><strong>2.1.2 - 키보드 함정 방지</strong>,
-            </li>
-            <li><strong>2.3.1 - 3회 또는 임계값 이하의 번쩍임</strong>, and
-            </li>
-            <li><strong>2.2.2 - 일시정지, 중지, 숨김</strong>.
-            </li>
+            <li><strong>1.4.2 - 오디오 제어</strong></li>
+            <li><strong>2.1.2 - 키보드 함정 방지</strong></li>
+            <li><strong>2.3.1 - 3회 또는 임계값 이하의 번쩍임</strong></li>
+            <li><strong>2.2.2 - 일시정지, 중지, 숨김</strong></li>
           </ul>
           <div class="note" role="note" id="issue-container-generatedID-50">
             <div role="heading" class="note-title marker" id="h-note-50" aria-level="5"><span>참고</span></div>
-            <p>If a page cannot conform (for example, a conformance test page or an example page), it cannot be included in the scope of conformance or in a conformance claim.
+            <p>
+              페이지가 준수되지 않은 경우(예: 준수 검사 페이지 또는 예제 페이지), 준수 범위 또는 준수 선언에 포함될 수 없다.
             </p>
           </div>
-          <p>For more information, including examples, see <a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#conformance-requirements">Understanding Conformance Requirements</a>.
+          <p>
+            예제를 포함한 자세한 내용은 <a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#conformance-requirements">준수 요구사항 이해</a>를 참고하라.
           </p>
         </section>
       </section>
       <section id="conformance-claims">
         <div class="header-wrapper">
-          <h3 id="x5-3-conformance-claims-optional"><bdi class="secno">5.3 </bdi>Conformance Claims (Optional) </h3>
+          <h3 id="x5-3-conformance-claims-optional"><bdi class="secno">5.3 </bdi>준수 선언 (선택사항)</h3>
           <a class="self-link" href="#conformance-claims" aria-label="섹션 고유링크 5.3"></a>
         </div>
-        <p>Conformance is defined only for <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-16" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 자원(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 자원">웹 페이지</a>. However, a conformance claim may be made to cover one page, a series of pages, or multiple related Web pages.
+        <p>
+          준수는 <a href="#dfn-web-page-s" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-web-page-s-16" title="HTTP를 사용하여 단일 URI에서 얻어진 내장 안 된 자원(non-embedded resource)과 렌더링에 사용되거나 사용자 에이전트에서 렌더링되도록 의도된 모든 다른 자원">웹 페이지</a>에 한정된다. 그러나 준수 선언(conformance claim)은 하나의 페이지, 일련의 페이지 또는 여러 개의 관련 웹 페이지를 포괄할 수도 있다.
         </p>
         <section id="conformance-required">
           <div class="header-wrapper">
-            <h4 id="x5-3-1-required-components-of-a-conformance-claim"><bdi class="secno">5.3.1 </bdi>Required Components of a Conformance Claim</h4>
+            <h4 id="x5-3-1-required-components-of-a-conformance-claim"><bdi class="secno">5.3.1 </bdi>준수 선언의 필수 구성요소</h4>
             <a class="self-link" href="#conformance-required" aria-label="섹션 고유링크 5.3.1"></a>
           </div>
-          <p>Conformance claims are <strong>not required</strong>. Authors can conform to WCAG 2.2 without making a claim. However, if a conformance claim is made, then the conformance claim <strong>must</strong> include the following information:</p>
+          <p>
+            준수 선언은 <strong>필수적인 것이 아니다</strong>. 웹 콘텐츠 저작자는 준수 선언하지 않고 WCAG 2.1을 준수할 수 있다. 그러나 준수 선언이 행해지려면, 준수 선언은 다음과 같은 정보를 포함<strong>해야 한다</strong>.
+          </p>
           <ol>
-            <li><strong>Date</strong> of the claim
+            <li>선언 <strong>날짜</strong>
             </li>
-            <li><strong>Guidelines title, version and URI </strong> "Web Content Accessibility Guidelines 2.2 at <a href="https://www.w3.org/TR/WCAG22/">https://www.w3.org/TR/WCAG22/</a>"
+            <li><strong>지침 제목, 버전, URI</strong> "Web Content Accessibility Guidelines 2.2 at <a href="https://www.w3.org/TR/WCAG22/">https://www.w3.org/TR/WCAG22/</a>"
             </li>
-            <li><strong>Conformance level</strong> satisfied: (Level A, AA or AAA)
+            <li>충족한 <strong>준수 수준</strong>: (Level A, AA or AAA)
             </li>
             <li>
-              <p><strong>A concise description of the Web pages</strong>, such as a list of URIs for which the claim is made, including whether subdomains are included in the claim.
+              <p>
+                하위 도메인이 선언에 포함되는지 여부를 포함하여, 선언된 URI 리스트와 같이, <strong>웹 페이지에 대한 간략한 기술</strong>
               </p>
               <div class="note" role="note" id="issue-container-generatedID-51">
                 <div role="heading" class="note-title marker" id="h-note-51" aria-level="5"><span>침고 1</span></div>
-                <p>The Web pages may be described by list or by an expression that describes all of the URIs included in the claim.
+                <p>
+                  웹 페이지는 목록이나 선언에 포함된 모든 URI로 기술할 수 있다.
                 </p>
               </div>
               <div class="note" role="note" id="issue-container-generatedID-52">
                 <div role="heading" class="note-title marker" id="h-note-52" aria-level="5"><span>침고 2</span></div>
-                <p>Web-based products that do not have a URI prior to installation on the customer's Web site may have a statement that the product would conform when installed.
+                <p>
+                  고객의 웹 사이트에 설치하기 전에 URI가 없는 웹기반 제품은 설치 시 해당 제품이 준수한다는 진술을 포함할 수 있다.
                 </p>
               </div>
             </li>
-            <li>A list of the <strong><a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-4" title="사용자 에이전트가 렌더링, 재생 또는 실행할 인코딩 명령을 위한 메커니즘">Web content technologies</a> <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-4" title="the content would not conform if that technology is turned off or is not supported">relied upon</a></strong>.
+            <li>
+              <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-4" title="해당 기술이 해제되거나 지원하지 않으면, 콘텐츠가 준수되지 않는">의존</a></strong>하는 <a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-4" title="사용자 에이전트가 렌더링, 재생 또는 실행할 인코딩 명령을 위한 메커니즘">웹 콘텐츠 기술</a> 리스트
             </li>
           </ol>
           <div class="note" role="note" id="issue-container-generatedID-53">
             <div role="heading" class="note-title marker" id="h-note-53" aria-level="5"><span>침고 3</span></div>
-            <p>If a conformance logo is used, it would constitute a claim and must be accompanied by the required components of a conformance claim listed above.
+            <p>
+              준수 로고가 사용될 경우, 선언을 포함하고, 위에서 열거된 준수 선언의 필수 구성요소를 함께 표시해야 한다.
             </p>
           </div>
         </section>
         <section id="conformance-optional">
           <div class="header-wrapper">
-            <h4 id="x5-3-2-optional-components-of-a-conformance-claim"><bdi class="secno">5.3.2 </bdi>Optional Components of a Conformance Claim </h4>
+            <h4 id="x5-3-2-optional-components-of-a-conformance-claim"><bdi class="secno">5.3.2 </bdi>준수 선언의 선택적 구성요소</h4>
             <a class="self-link" href="#conformance-optional" aria-label="섹션 고유링크 5.3.2"></a>
           </div>
-          <p>In addition to the required components of a conformance claim above, consider providing additional information to assist users. Recommended additional information includes:</p>
+          <p>위의 준수 선언의 필수 구성요소 이외에도, 사용자를 지원하기 위한 추가 정보를 제공하는 것을 고려해 보라. 권장되는 추가 정보는 다음과 같다.</p>
           <ul>
-            <li>A list of success criteria beyond the level of conformance claimed that have been met. This information should be provided in a form that users can use, preferably machine-readable metadata.</li>
-            <li>A list of the specific technologies that are " <em>used but not <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-5" title="the content would not conform if that technology is turned off or is not supported">relied upon</a></em>."</li>
+            <li>선언된 준수수준 이상의 충족된 성공기준 리스트. 이 정보는 사용자가 사용할 수 있는 형태로 제공되어야 하며, 가능한 기계가 판독할 수 있는 메타데이터여야 한다.</li>
+            <li>"<em>사용되었지만 <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-5" title="해당 기술이 해제되거나 지원하지 않으면, 콘텐츠가 준수되지 않는">의존</a>하지 않는</em>" 특정 기술 리스트 A list of the specific technologies that are " <em>used but not <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-5" title="해당 기술이 해제되거나 지원하지 않으면, 콘텐츠가 준수되지 않는">의존</a></em>."</li>
             <li>A list of user agents, including assistive technologies that were used to test the content.</li>
             <li>A list of specific accessibility characteristics of the content, provided in machine-readable metadata.</li>
             <li>Information about any additional steps taken that go beyond the success criteria to enhance accessibility.</li>
-            <li>A machine-readable metadata version of the list of specific technologies that are <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-6" title="the content would not conform if that technology is turned off or is not supported">relied upon</a>.</li>
+            <li>A machine-readable metadata version of the list of specific technologies that are <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-6" title="해당 기술이 해제되거나 지원하지 않으면, 콘텐츠가 준수되지 않는">의존</a>.</li>
             <li>A machine-readable metadata version of the conformance claim.</li>
           </ul>
           <div class="note" role="note" id="issue-container-generatedID-54">
@@ -2792,7 +2813,7 @@
           </div>
           <div class="note" role="note" id="issue-container-generatedID-60">
             <div role="heading" class="note-title marker" id="h-note-60" aria-level="3"><span>침고 2</span></div>
-            <p>Web technologies can be used in ways that are not accessibility supported as long as they are not <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-7" title="the content would not conform if that technology is turned off or is not supported">relied upon</a> and the page as a whole meets the conformance requirements, including <a href="#cc4">Conformance Requirement 4</a> and <a href="#cc5">Conformance Requirement 5</a>.
+            <p>Web technologies can be used in ways that are not accessibility supported as long as they are not <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-7" title="해당 기술이 해제되거나 지원하지 않으면, 콘텐츠가 준수되지 않는">의존</a> and the page as a whole meets the conformance requirements, including <a href="#cc4">Conformance Requirement 4</a> and <a href="#cc5">Conformance Requirement 5</a>.
             </p>
           </div>
           <div class="note" role="note" id="issue-container-generatedID-61">
@@ -3057,7 +3078,7 @@
         <dd>
           <p>표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것</p>
         </dd>
-        <dt><dfn data-lt="conforming alternate versions|conforming alternate version" id="dfn-conforming-alternate-versions" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">conforming alternate version</dfn></dt>
+        <dt><dfn data-lt="conforming alternate versions|conforming alternate version" id="dfn-conforming-alternate-versions" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">준수 대안 버전</dfn></dt>
         <dd>
           <p>version that</p>
           <ol>
@@ -3387,12 +3408,12 @@
             </p>
           </aside>
         </dd>
-        <dt><dfn id="dfn-informative" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">informative</dfn></dt>
+        <dt><dfn id="dfn-informative" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">정보성</dfn></dt>
         <dd>
           <p>for information purposes and not required for 준수</p>
           <div class="note" role="note" id="issue-container-generatedID-108">
             <div role="heading" class="note-title marker" id="h-note-108" aria-level="3"><span>참고</span></div>
-            <p>Content required for <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-3" title="표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것">준수</a> is referred to as "<a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-2" title="required for conformance">normative</a>."</p>
+            <p>Content required for <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-3" title="표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것">준수</a> is referred to as "<a href="#dfn-normative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-normative-2" title="준수에 필요한">규범</a>."</p>
           </div>
         </dd>
         <dt><dfn id="dfn-input-error" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">입력 오류</dfn></dt>
@@ -3558,7 +3579,7 @@
           </p>
           <div class="note" role="note" id="issue-container-generatedID-122">
             <div role="heading" class="note-title marker" id="h-note-122" aria-level="3"><span>침고 1</span></div>
-            <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-8" title="the content would not conform if that technology is turned off or is not supported">relied upon</a> to be provided by either the platform or by <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-9" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">사용자 에이전트</a>, including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-6" title="사용자 에이전트 역할을 하거나 주류 사용자 에이전트와 함께 작동하며, 주류 사용자 에이전트가 제공하는 것 이상의, 장애를 지닌 사용자의 요구사항을 충족하는 기능을 제공하는 하드웨어나 소프트웨어">보조 기술</a>.
+            <p>The mechanism may be explicitly provided in the content, or may be <a href="#dfn-relied-upon" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-relied-upon-8" title="해당 기술이 해제되거나 지원하지 않으면, 콘텐츠가 준수되지 않는">의존</a> to be provided by either the platform or by <a href="#dfn-user-agents" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-user-agents-9" title="사용자를 위해 웹 콘텐츠를 검색하고 표시하는 소프트웨어">사용자 에이전트</a>, including <a href="#dfn-assistive-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-assistive-technologies-6" title="사용자 에이전트 역할을 하거나 주류 사용자 에이전트와 함께 작동하며, 주류 사용자 에이전트가 제공하는 것 이상의, 장애를 지닌 사용자의 요구사항을 충족하는 기능을 제공하는 하드웨어나 소프트웨어">보조 기술</a>.
             </p>
           </div>
           <div class="note" role="note" id="issue-container-generatedID-123">
@@ -3617,7 +3638,7 @@
             <p>This includes <a href="#dfn-ascii-art" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-ascii-art-1" title="picture created by a spatial arrangement of characters or glyphs (typically from the 95 printable characters defined by ASCII)">ASCII Art</a> (which is a pattern of characters), emoticons, leetspeak (which uses character substitution), and images representing text</p>
           </div>
         </dd>
-        <dt><dfn id="dfn-normative" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">normative</dfn></dt>
+        <dt><dfn id="dfn-normative" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">규범</dfn></dt>
         <dd>
           <p>required for 준수</p>
           <div class="note" role="note" id="issue-container-generatedID-128">
@@ -3627,7 +3648,7 @@
           </div>
           <div class="note" role="note" id="issue-container-generatedID-129">
             <div role="heading" class="note-title marker" id="h-note-129" aria-level="3"><span>침고 2</span></div>
-            <p>Content identified as "<a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-2" title="for information purposes and not required for conformance">informative</a>" or "non-normative" is never required for <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-4" title="표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것">준수</a>.
+            <p>Content identified as "<a href="#dfn-informative" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-informative-2" title="정보 제공만을 목적으로 하며, 준수(conformance)에는 꼭 필요하지는 않은">정보성</a>" or "non-normative" is never required for <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-4" title="표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것">준수</a>.
             </p>
           </div>
         </dd>
@@ -3860,7 +3881,7 @@
             </p>
           </div>
         </dd>
-        <dt><dfn id="dfn-relied-upon" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">relied upon</dfn> (technologies that are)
+        <dt><dfn id="dfn-relied-upon" tabindex="0" aria-haspopup="dialog" data-dfn-type="dfn">의존</dfn> (technologies that are)
         </dt>
         <dd>
           <p>the content would not <a href="#dfn-conform" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-conform-5" title="표준, 가이드라인 또는 사양의 모든 요구사항을 충족하는 것">conform</a> if that <a href="#dfn-technologies" class="internalDFN" data-link-type="dfn" id="ref-for-dfn-technologies-7" title="사용자 에이전트가 렌더링, 재생 또는 실행할 인코딩 명령을 위한 메커니즘">기술</a> is turned off or is not supported
@@ -4500,7 +4521,7 @@
           </dd>
           <dt id="bib-rfc2119">[RFC2119]</dt>
           <dd>
-            <a href="https://www.rfc-editor.org/rfc/rfc2119"><cite>Key words for use in RFCs to Indicate Requirement Levels</cite></a>. S. Bradner.  IETF. March 1997. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a>
+            <a href="https://www.rfc-editor.org/rfc/rfc2119"><cite>요구 사항 수준을 나타내기 위해 RFC에서 사용되는 키워드</cite></a>. S. Bradner.  IETF. March 1997. Best Current Practice. URL: <a href="https://www.rfc-editor.org/rfc/rfc2119">https://www.rfc-editor.org/rfc/rfc2119</a>
           </dd>
           <dt id="bib-srgb">[SRGB]</dt>
           <dd>
@@ -4556,10 +4577,10 @@
           <a href="#ref-for-dfn-accessibility-supported-2" title="§ 5. Conformance">§ 5. 준수</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-accessibility-supported-3" title="§ 5.2.4 Only Accessibility-Supported Ways of Using Technologies">§ 5.2.4 Only Accessibility-Supported Ways of Using Technologies</a>
+          <a href="#ref-for-dfn-accessibility-supported-3" title="§ 5.2.4 Only Accessibility-Supported Ways of Using Technologies">§ 5.2.4 접근성 지원 기술 활용 방법</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-accessibility-supported-4" title="§ 5.2.5 Non-Interference">§ 5.2.5 Non-Interference</a>
+          <a href="#ref-for-dfn-accessibility-supported-4" title="§ 5.2.5 Non-Interference">§ 5.2.5 불간섭</a>
         </li>
         <li>
           <a href="#ref-for-dfn-accessibility-supported-5" title="§ 5.5 Statement of Partial Conformance - Language">§ 5.5 Statement of Partial Conformance - Language</a>
@@ -4815,7 +4836,7 @@
           <a href="#ref-for-dfn-conform-1" title="§ 5. Conformance">§ 5. 준수</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-conform-2" title="§ 5.2.2 Full pages">§ 5.2.2 Full pages</a>
+          <a href="#ref-for-dfn-conform-2" title="§ 5.2.2 Full pages">§ 5.2.2 전체 페이지</a>
         </li>
         <li>
           <a href="#ref-for-dfn-conform-3" title="§ 6. Glossary">§ 6. Glossary</a> 
@@ -4832,7 +4853,7 @@
       <p><b>Referenced in:</b></p>
       <ul>
         <li>
-          <a href="#ref-for-dfn-conforming-alternate-versions-1" title="§ 5.2.1 Conformance Level">§ 5.2.1 Conformance Level</a>
+          <a href="#ref-for-dfn-conforming-alternate-versions-1" title="§ 5.2.1 Conformance Level">§ 5.2.1 준수 수준</a>
         </li>
       </ul>
     </div>
@@ -5655,7 +5676,7 @@
           <a href="#ref-for-dfn-processes-4" title="§ 3.3.9 Accessible Authentication (향상된)">§ 3.3.9 접근 가능한 인증 (향상된)</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-processes-5" title="§ 5.2.3 Complete processes">§ 5.2.3 Complete processes</a>
+          <a href="#ref-for-dfn-processes-5" title="§ 5.2.3 Complete processes">§ 5.2.3 전체 과정</a>
         </li>
         <li>
           <a href="#ref-for-dfn-processes-6" title="§ 6. Glossary">§ 6. Glossary</a> 
@@ -5812,13 +5833,13 @@
           <a href="#ref-for-dfn-relied-upon-1" title="§ 5. Conformance">§ 5. 준수</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-relied-upon-2" title="§ 5.2.4 Only Accessibility-Supported Ways of Using Technologies">§ 5.2.4 Only Accessibility-Supported Ways of Using Technologies</a>
+          <a href="#ref-for-dfn-relied-upon-2" title="§ 5.2.4 Only Accessibility-Supported Ways of Using Technologies">§ 5.2.4 접근성 지원 기술 활용 방법</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-relied-upon-3" title="§ 5.2.5 Non-Interference">§ 5.2.5 Non-Interference</a>
+          <a href="#ref-for-dfn-relied-upon-3" title="§ 5.2.5 Non-Interference">§ 5.2.5 불간섭</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-relied-upon-4" title="§ 5.3.1 Required Components of a Conformance Claim">§ 5.3.1 Required Components of a Conformance Claim</a>
+          <a href="#ref-for-dfn-relied-upon-4" title="§ 5.3.1 Required Components of a Conformance Claim">§ 5.3.1 준수 선언의 필수 구성요소</a>
         </li>
         <li>
           <a href="#ref-for-dfn-relied-upon-5" title="§ 5.3.2 Optional Components of a Conformance Claim">§ 5.3.2 Optional Components of a Conformance Claim</a> 
@@ -5877,7 +5898,7 @@
       <p><b>Referenced in:</b></p>
       <ul>
         <li>
-          <a href="#ref-for-dfn-satisfies-1" title="§ 5.2.1 Conformance Level">§ 5.2.1 Conformance Level</a>
+          <a href="#ref-for-dfn-satisfies-1" title="§ 5.2.1 Conformance Level">§ 5.2.1 준수 수준</a>
         </li>
       </ul>
     </div>
@@ -6100,13 +6121,13 @@
           <a href="#ref-for-dfn-technologies-1" title="§ 2.4.13 Focus Appearance">§ 2.4.13 Focus Appearance</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-technologies-2" title="§ 5.2.4 Only Accessibility-Supported Ways of Using Technologies">§ 5.2.4 Only Accessibility-Supported Ways of Using Technologies</a>
+          <a href="#ref-for-dfn-technologies-2" title="§ 5.2.4 Only Accessibility-Supported Ways of Using Technologies">§ 5.2.4 접근성 지원 기술 활용 방법</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-technologies-3" title="§ 5.2.5 Non-Interference">§ 5.2.5 Non-Interference</a>
+          <a href="#ref-for-dfn-technologies-3" title="§ 5.2.5 Non-Interference">§ 5.2.5 불간섭</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-technologies-4" title="§ 5.3.1 Required Components of a Conformance Claim">§ 5.3.1 Required Components of a Conformance Claim</a>
+          <a href="#ref-for-dfn-technologies-4" title="§ 5.3.1 Required Components of a Conformance Claim">§ 5.3.1 준수 선언의 필수 구성요소</a>
         </li>
         <li>
           <a href="#ref-for-dfn-technologies-5" title="§ 6. Glossary">§ 6. Glossary</a> 
@@ -6414,16 +6435,16 @@
           <a href="#ref-for-dfn-web-page-s-11" title="§ 3.3.6 Error Prevention (All)">§ 3.3.6 오류 예방 (전체)</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-web-page-s-12" title="§ 5.2.1 Conformance Level">§ 5.2.1 Conformance Level</a>
+          <a href="#ref-for-dfn-web-page-s-12" title="§ 5.2.1 Conformance Level">§ 5.2.1 준수 수준</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-web-page-s-13" title="§ 5.2.2 Full pages">§ 5.2.2 Full pages</a>
+          <a href="#ref-for-dfn-web-page-s-13" title="§ 5.2.2 Full pages">§ 5.2.2 전체 페이지</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-web-page-s-14" title="§ 5.2.3 Complete processes">§ 5.2.3 Complete processes</a>
+          <a href="#ref-for-dfn-web-page-s-14" title="§ 5.2.3 Complete processes">§ 5.2.3 전체 과정</a>
         </li>
         <li>
-          <a href="#ref-for-dfn-web-page-s-15" title="§ 5.2.5 Non-Interference">§ 5.2.5 Non-Interference</a>
+          <a href="#ref-for-dfn-web-page-s-15" title="§ 5.2.5 Non-Interference">§ 5.2.5 불간섭</a>
         </li>
         <li>
           <a href="#ref-for-dfn-web-page-s-16" title="§ 5.3 Conformance Claims (Optional)">§ 5.3 Conformance Claims (Optional)</a>
