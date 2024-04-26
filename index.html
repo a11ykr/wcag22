@@ -4,18 +4,232 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <style>
+    span.example-title{text-transform:none}
+    :is(aside,div).example,div.illegal-example{padding:.5em;margin:1em 0;position:relative;clear:both}
+    div.illegal-example{color:red}
+    div.illegal-example p{color:#000}
+    :is(aside,div).example{border-left-width:.5em;border-left-style:solid;border-color:#e0cb52;background:#fcfaee}
+    aside.example div.example{border-left-width:.1em;border-color:#999;background:#fff}
+    .example pre{background-color:rgba(0,0,0,.03)}
+    </style>
+    <style>
+    .issue-label{text-transform:initial}
+    .warning>p:first-child{margin-top:0}
+    .warning{padding:.5em;border-left-width:.5em;border-left-style:solid}
+    span.warning{padding:.1em .5em .15em}
+    .issue.closed span.issue-number{text-decoration:line-through}
+    .issue.closed span.issue-number::after{content:" (Closed)";font-size:smaller}
+    .warning{border-color:#f11;border-width:.2em;border-style:solid;background:#fbe9e9}
+    .warning-title:before{content:"⚠";font-size:1.3em;float:left;padding-right:.3em;margin-top:-.3em}
+    li.task-list-item{list-style:none}
+    input.task-list-item-checkbox{margin:0 .35em .25em -1.6em;vertical-align:middle}
+    .issue a.respec-gh-label{padding:5px;margin:0 2px 0 2px;font-size:10px;text-transform:none;text-decoration:none;font-weight:700;border-radius:4px;position:relative;bottom:2px;border:none;display:inline-block}
+    </style>
+    <style>
+    dfn{cursor:pointer}
+    .dfn-panel{position:absolute;z-index:35;min-width:300px;max-width:500px;padding:.5em .75em;margin-top:.6em;font-family:"Helvetica Neue",sans-serif;font-size:small;background:#fff;color:#000;box-shadow:0 1em 3em -.4em rgba(0,0,0,.3),0 0 1px 1px rgba(0,0,0,.05);border-radius:2px}
+    .dfn-panel:not(.docked)>.caret{position:absolute;top:-9px}
+    .dfn-panel:not(.docked)>.caret::after,.dfn-panel:not(.docked)>.caret::before{content:"";position:absolute;border:10px solid transparent;border-top:0;border-bottom:10px solid #fff;top:0}
+    .dfn-panel:not(.docked)>.caret::before{border-bottom:9px solid #a2a9b1}
+    .dfn-panel *{margin:0}
+    .dfn-panel b{display:block;color:#000;margin-top:.25em}
+    .dfn-panel ul a[href]{color:#333}
+    .dfn-panel>div{display:flex}
+    .dfn-panel a.self-link{font-weight:700;margin-right:auto}
+    .dfn-panel .marker{padding:.1em;margin-left:.5em;border-radius:.2em;text-align:center;white-space:nowrap;font-size:90%;color:#040b1c}
+    .dfn-panel .marker.dfn-exported{background:#d1edfd;box-shadow:0 0 0 .125em #1ca5f940}
+    .dfn-panel .marker.idl-block{background:#8ccbf2;box-shadow:0 0 0 .125em #0670b161}
+    .dfn-panel a:not(:hover){text-decoration:none!important;border-bottom:none!important}
+    .dfn-panel a[href]:hover{border-bottom-width:1px}
+    .dfn-panel ul{padding:0}
+    .dfn-panel li{margin-left:1em}
+    .dfn-panel.docked{position:fixed;left:.5em;top:unset;bottom:2em;margin:0 auto;max-width:calc(100vw - .75em * 2 - .5em - .2em * 2);max-height:30vh;overflow:auto}
+  </style>
   <title>WCAG 2.2 Korean Translation Version(unofficial)</title>
+  <style id="respec-mainstyle">
+    @keyframes pop{
+    0%{transform:scale(1,1)}
+    25%{transform:scale(1.25,1.25);opacity:.75}
+    100%{transform:scale(1,1)}
+    }
+    :is(h1,h2,h3,h4,h5,h6,a) abbr{border:none}
+    dfn{font-weight:700}
+    a.internalDFN{color:inherit;border-bottom:1px solid #99c;text-decoration:none}
+    a.externalDFN{color:inherit;border-bottom:1px dotted #ccc;text-decoration:none}
+    a.bibref{text-decoration:none}
+    .respec-offending-element:target{animation:pop .25s ease-in-out 0s 1}
+    .respec-offending-element,a[href].respec-offending-element{text-decoration:red wavy underline}
+    @supports not (text-decoration:red wavy underline){
+    .respec-offending-element:not(pre){display:inline-block}
+    .respec-offending-element{background:url(data:image/gif;base64,R0lGODdhBAADAPEAANv///8AAP///wAAACwAAAAABAADAEACBZQjmIAFADs=) bottom repeat-x}
+    }
+    #references :target{background:#eaf3ff;animation:pop .4s ease-in-out 0s 1}
+    cite .bibref{font-style:normal}
+    a[href].orcid{padding-left:4px;padding-right:4px}
+    a[href].orcid>svg{margin-bottom:-2px}
+    .toc a,.tof a{text-decoration:none}
+    a .figno,a .secno{color:#000}
+    ol.tof,ul.tof{list-style:none outside none}
+    .caption{margin-top:.5em;font-style:italic}
+    table.simple{border-spacing:0;border-collapse:collapse;border-bottom:3px solid #005a9c}
+    .simple th{background:#005a9c;color:#fff;padding:3px 5px;text-align:left}
+    .simple th a{color:#fff;padding:3px 5px;text-align:left}
+    .simple th[scope=row]{background:inherit;color:inherit;border-top:1px solid #ddd}
+    .simple td{padding:3px 10px;border-top:1px solid #ddd}
+    .simple tr:nth-child(even){background:#f0f6ff}
+    .section dd>p:first-child{margin-top:0}
+    .section dd>p:last-child{margin-bottom:0}
+    .section dd{margin-bottom:1em}
+    .section dl.attrs dd,.section dl.eldef dd{margin-bottom:0}
+    #issue-summary>ul{column-count:2}
+    #issue-summary li{list-style:none;display:inline-block}
+    details.respec-tests-details{margin-left:1em;display:inline-block;vertical-align:top}
+    details.respec-tests-details>*{padding-right:2em}
+    details.respec-tests-details[open]{z-index:999999;position:absolute;border:thin solid #cad3e2;border-radius:.3em;background-color:#fff;padding-bottom:.5em}
+    details.respec-tests-details[open]>summary{border-bottom:thin solid #cad3e2;padding-left:1em;margin-bottom:1em;line-height:2em}
+    details.respec-tests-details>ul{width:100%;margin-top:-.3em}
+    details.respec-tests-details>li{padding-left:1em}
+    .self-link:hover{opacity:1;text-decoration:none;background-color:transparent}
+    aside.example .marker>a.self-link{color:inherit}
+    .header-wrapper{display:flex;align-items:baseline}
+    :is(h2,h3,h4,h5,h6):not(#toc>h2,#abstract>h2,#sotd>h2,.head>h2){position:relative;left:-.5em}
+    :is(h2,h3,h4,h5,h6):not(#toch2)+a.self-link{color:inherit;order:-1;position:relative;left:-1.1em;font-size:1rem;opacity:.5}
+    :is(h2,h3,h4,h5,h6)+a.self-link::before{content:"§";text-decoration:none;color:var(--heading-text)}
+    :is(h2,h3)+a.self-link{top:-.2em}
+    :is(h4,h5,h6)+a.self-link::before{color:#000}
+    @media (max-width:767px){
+    dd{margin-left:0}
+    }
+    @media print{
+    .removeOnSave{display:none}
+    }
+  </style>    
   <link rel="stylesheet" type="text/css" href="./resources/guidelines.css">
   <!-- <link rel="stylesheet" type="text/css" href="./resources/formats.css"> -->
   <meta name="description" content="WCAG(웹 콘텐츠 접근성 지침) 2.2는 웹 콘텐츠의 접근성을 높이기 위한 다양한 권장 사항을 다루고 있습니다. 이러한 지침을 따르면 시각 장애, 저시력, 청각 장애 및 청력 상실, 지체 장애, 언어 장애, 광과민증 및 중복 장애에 대한 편의 제공, 학습 장애 및 인지적 한계; 그러나 이러한 장애가 있는 사람들의 모든 사용자 요구 사항을 해결하지는 않습니다. 이 지침은 데스크톱, 노트북, 태블릿 및 모바일 장치의 웹 콘텐츠 접근성을 다룹니다. 이러한 지침을 따르면 일반적으로 사용자가 웹 콘텐츠를 더 쉽게 사용할 수 있게 됩니다.">
   <link rel="canonical" href="https://www.w3.org/TR/WCAG22/">
-  <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-REC"></head>
+  <style>
+    var{position:relative;cursor:pointer}
+    var[data-type]::after,var[data-type]::before{position:absolute;left:50%;top:-6px;opacity:0;transition:opacity .4s;pointer-events:none}
+    var[data-type]::before{content:"";transform:translateX(-50%);border-width:4px 6px 0 6px;border-style:solid;border-color:transparent;border-top-color:#000}
+    var[data-type]::after{content:attr(data-type);transform:translateX(-50%) translateY(-100%);background:#000;text-align:center;font-family:"Dank Mono","Fira Code",monospace;font-style:normal;padding:6px;border-radius:3px;color:#daca88;text-indent:0;font-weight:400}
+    var[data-type]:hover::after,var[data-type]:hover::before{opacity:1}
+    </style>
+    <script id="initialUserConfig" type="application/json">{
+      "trace": true,
+      "useExperimentalStyles": true,
+      "doRDFa": "1.1",
+      "includePermalinks": true,
+      "permalinkEdge": true,
+      "permalinkHide": false,
+      "tocIntroductory": true,
+      "specStatus": "REC",
+      "publishDate": "2023-10-05",
+      "diffTool": "http://www.aptest.com/standards/htmldiff/htmldiff.pl",
+      "shortName": "WCAG22",
+      "copyrightStart": "2020",
+      "license": "document",
+      "prevRecURI": "https://www.w3.org/TR/WCAG21/",
+      "edDraftURI": "https://w3c.github.io/wcag/guidelines/22/",
+      "editors": [
+        {
+          "name": "Alastair Campbell",
+          "mailto": "acampbell@nomensa.com",
+          "company": "Nomensa",
+          "companyURI": "https://www.nomensa.com/",
+          "w3cid": 44689,
+          "url": "mailto:acampbell@nomensa.com"
+        },
+        {
+          "name": "Chuck Adams",
+          "mailto": "charles.adams@oracle.com",
+          "company": "Oracle",
+          "companyURI": "https://www.oracle.com/",
+          "w3cid": 104852,
+          "url": "mailto:charles.adams@oracle.com"
+        },
+        {
+          "name": "Rachael Bradley Montgomery",
+          "mailto": "rachael@accessiblecommunity.org",
+          "company": "Library of Congress",
+          "companyURI": "https://loc.gov/",
+          "w3cid": 90310,
+          "url": "mailto:rachael@accessiblecommunity.org"
+        },
+        {
+          "name": "Michael Cooper",
+          "url": "https://www.w3.org/People/cooper",
+          "company": "W3C",
+          "companyURI": "https://www.w3.org",
+          "w3cid": 34017
+        },
+        {
+          "name": "Andrew Kirkpatrick",
+          "mailto": "akirkpat@adobe.com",
+          "company": "Adobe",
+          "companyURI": "http://www.adobe.com/",
+          "w3cid": 39770,
+          "url": "mailto:akirkpat@adobe.com"
+        }
+      ],
+      "errata": "https://www.w3.org/WAI/WCAG22/errata/",
+      "implementationReportURI": "https://www.w3.org/WAI/WCAG22/implementation-report/",
+      "group": "ag",
+      "github": "w3c/wcag",
+      "maxTocLevel": 4,
+      "postProcess": [
+        null
+      ],
+      "localBiblio": {
+        "CAPTCHA": {
+          "href": "http://www.captcha.net/",
+          "publisher": "Carnegie Mellon University",
+          "title": "The CAPTCHA Project"
+        },
+        "GPII": {
+          "href": "https://gpii.net/",
+          "title": "Global Public Inclusive Infrastructure"
+        },
+        "HARDING-BINNIE": {
+          "authors": [
+            "Harding G. F. A.",
+            "Binnie, C.D."
+          ],
+          "date": "2002",
+          "title": "Independent Analysis of the ITC Photosensitive Epilepsy Calibration Test Tape"
+        },
+        "IEC-4WD": {
+          "date": "May 5, 1998",
+          "title": "IEC/4WD 61966-2-1: Colour Measurement and Management in Multimedia Systems and Equipment - Part 2.1: Default Colour Space - sRGB"
+        },
+        "ISO_9241-112": {
+          "isoNumber": "9241-112",
+          "href": "https://www.iso.org/standard/64840.html",
+          "title": "Ergonomics of human-system interaction -- Part 112: Principles for the presentation of information",
+          "publisher": "International Standards Organization"
+        },
+        "ISO_9241-391": {
+          "isoNumber": "9241-391",
+          "href": "https://www.iso.org/standard/56350.html",
+          "title": "Ergonomics of human-system interaction—Part 391: Requirements, analysis and compliance test methods for the reduction of photosensitive seizures",
+          "publisher": "International Standards Organization",
+          "id": "iso_9241-391"
+        },
+        "UNESCO": {
+          "date": "2011",
+          "href": "https://unesdoc.unesco.org/ark:/48223/pf0000219109",
+          "title": "International Standard Classification of Education",
+          "id": "unesco"
+        }
+      },
+      "publishISODate": "2023-10-05T00:00:00.000Z",
+      "generatedSubtitle": "W3C Recommendation 05 October 2023"
+    }
+  </script>  
+  <link rel="stylesheet" href="https://www.w3.org/StyleSheets/TR/2021/W3C-REC">
 </head>
-<body class="h-entry informative toc-sidebar">
-  <p id="toc-nav">
-    <a id="toc-jump" href="#toc"><span aria-hidden="true">↑</span> <span>목차 바로가기</span></a>
-    <a id="toc-toggle" href="#toc"><span aria-hidden="true">←</span> <span>사이드바 감추기</span></a>
-  </p>
+<body class="h-entry informative">
   <div class="head">
     <p class="logos"><a class="logo" href="https://www.w3.org/"><img crossorigin="" alt="W3C" height="48" src="https://www.w3.org/StyleSheets/TR/2021/logos/W3C" width="72"></a></p>
     <ul style="border: 2px solid red;margin:0 120px 30px 0;padding:10px 10px 5px 30px;">
@@ -6451,208 +6665,230 @@
       </li>
     </ul>
   </div>
-  <script id="respec-dfn-panel">
-    (() => {
-      // @ts-check
-      if (document.respec) {
-        document.respec.ready.then(setupPanel);
-      } else {
-        setupPanel();
-      }
-      function setupPanel() {
-        const listener = panelListener();
-        document.body.addEventListener("keydown", listener);
-        document.body.addEventListener("click", listener);
-      }
-      function panelListener() {
-        /** @type {HTMLElement} */
-        let panel = null;
-        return event => {
-          const { target, type } = event;
-          if (!(target instanceof HTMLElement)) return;
-          // For keys, we only care about Enter key to activate the panel
-          // otherwise it's activated via a click.
-          if (type === "keydown" && event.key !== "Enter") return;
-          const action = deriveAction(event);
-          switch (action) {
-            case "show": {
-              hidePanel(panel);
-              /** @type {HTMLElement} */
-              const dfn = target.closest("dfn, .index-term");
-              panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
-              const coords = deriveCoordinates(event);
-              displayPanel(dfn, panel, coords);
-              break;
-            }
-            case "dock": {
-              panel.style.left = null;
-              panel.style.top = null;
-              panel.classList.add("docked");
-              break;
-            }
-            case "hide": {
-              hidePanel(panel);
-              panel = null;
-              break;
-            }
+  <script id="respec-dfn-panel">(() => {
+    // @ts-check
+    if (document.respec) {
+      document.respec.ready.then(setupPanel);
+    } else {
+      setupPanel();
+    }
+    
+    function setupPanel() {
+      const listener = panelListener();
+      document.body.addEventListener("keydown", listener);
+      document.body.addEventListener("click", listener);
+    }
+    
+    function panelListener() {
+      /** @type {HTMLElement} */
+      let panel = null;
+      return event => {
+        const { target, type } = event;
+    
+        if (!(target instanceof HTMLElement)) return;
+    
+        // For keys, we only care about Enter key to activate the panel
+        // otherwise it's activated via a click.
+        if (type === "keydown" && event.key !== "Enter") return;
+    
+        const action = deriveAction(event);
+    
+        switch (action) {
+          case "show": {
+            hidePanel(panel);
+            /** @type {HTMLElement} */
+            const dfn = target.closest("dfn, .index-term");
+            panel = document.getElementById(`dfn-panel-for-${dfn.id}`);
+            const coords = deriveCoordinates(event);
+            displayPanel(dfn, panel, coords);
+            break;
           }
-        };
-      }
-      /**
-      * @param {MouseEvent|KeyboardEvent} event
-      */
-      function deriveCoordinates(event) {
-        const target = /** @type HTMLElement */ (event.target);
-        // We prevent synthetic AT clicks from putting
-        // the dialog in a weird place. The AT events sometimes
-        // lack coordinates, so they have clientX/Y = 0
-        const rect = target.getBoundingClientRect();
-        if (
+          case "dock": {
+            panel.style.left = null;
+            panel.style.top = null;
+            panel.classList.add("docked");
+            break;
+          }
+          case "hide": {
+            hidePanel(panel);
+            panel = null;
+            break;
+          }
+        }
+      };
+    }
+    
+    /**
+     * @param {MouseEvent|KeyboardEvent} event
+     */
+    function deriveCoordinates(event) {
+      const target = /** @type HTMLElement */ (event.target);
+    
+      // We prevent synthetic AT clicks from putting
+      // the dialog in a weird place. The AT events sometimes
+      // lack coordinates, so they have clientX/Y = 0
+      const rect = target.getBoundingClientRect();
+      if (
         event instanceof MouseEvent &&
         event.clientX >= rect.left &&
         event.clientY >= rect.top
-        ) {
-          // The event probably happened inside the bounding rect...
-          return { x: event.clientX, y: event.clientY };
-        }
-        // Offset to the middle of the element
-        const x = rect.x + rect.width / 2;
-        // Placed at the bottom of the element
-        const y = rect.y + rect.height;
-        return { x, y };
+      ) {
+        // The event probably happened inside the bounding rect...
+        return { x: event.clientX, y: event.clientY };
       }
-      /**
-      * @param {Event} event
-      */
-      function deriveAction(event) {
-        const target = /** @type {HTMLElement} */ (event.target);
-        const hitALink = !!target.closest("a");
-        if (target.closest("dfn:not([data-cite]), .index-term")) {
-          return hitALink ? "none" : "show";
-        }
-        if (target.closest(".dfn-panel")) {
-          if (hitALink) {
-            return target.classList.contains("self-link") ? "hide" : "dock";
-          }
-          const panel = target.closest(".dfn-panel");
-          return panel.classList.contains("docked") ? "hide" : "none";
-        }
-        if (document.querySelector(".dfn-panel:not([hidden])")) {
-          return "hide";
-        }
-        return "none";
+    
+      // Offset to the middle of the element
+      const x = rect.x + rect.width / 2;
+      // Placed at the bottom of the element
+      const y = rect.y + rect.height;
+      return { x, y };
+    }
+    
+    /**
+     * @param {Event} event
+     */
+    function deriveAction(event) {
+      const target = /** @type {HTMLElement} */ (event.target);
+      const hitALink = !!target.closest("a");
+      if (target.closest("dfn:not([data-cite]), .index-term")) {
+        return hitALink ? "none" : "show";
       }
-      /**
-      * @param {HTMLElement} dfn
-      * @param {HTMLElement} panel
-      * @param {{ x: number, y: number }} clickPosition
-      */
-      function displayPanel(dfn, panel, { x, y }) {
-        panel.hidden = false;
-        // distance (px) between edge of panel and the pointing triangle (caret)
-        const MARGIN = 20;
-        const dfnRects = dfn.getClientRects();
-        // Find the `top` offset when the `dfn` can be spread across multiple lines
-        let closestTop = 0;
-        let minDiff = Infinity;
-        for (const rect of dfnRects) {
-          const { top, bottom } = rect;
-          const diffFromClickY = Math.abs((top + bottom) / 2 - y);
-          if (diffFromClickY < minDiff) {
-            minDiff = diffFromClickY;
-            closestTop = top;
-          }
+      if (target.closest(".dfn-panel")) {
+        if (hitALink) {
+          return target.classList.contains("self-link") ? "hide" : "dock";
         }
-        const top = window.scrollY + closestTop + dfnRects[0].height;
-        const left = x - MARGIN;
-        panel.style.left = `${left}px`;
-        panel.style.top = `${top}px`;
-        // Find if the panel is flowing out of the window
-        const panelRect = panel.getBoundingClientRect();
-        const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
-        if (panelRect.right > SCREEN_WIDTH) {
-          const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
-          const newCaretOffset = left - newLeft;
-          panel.style.left = `${newLeft}px`;
-          /** @type {HTMLElement} */
-          const caret = panel.querySelector(".caret");
-          caret.style.left = `${newCaretOffset}px`;
+        const panel = target.closest(".dfn-panel");
+        return panel.classList.contains("docked") ? "hide" : "none";
+      }
+      if (document.querySelector(".dfn-panel:not([hidden])")) {
+        return "hide";
+      }
+      return "none";
+    }
+    
+    /**
+     * @param {HTMLElement} dfn
+     * @param {HTMLElement} panel
+     * @param {{ x: number, y: number }} clickPosition
+     */
+    function displayPanel(dfn, panel, { x, y }) {
+      panel.hidden = false;
+      // distance (px) between edge of panel and the pointing triangle (caret)
+      const MARGIN = 20;
+    
+      const dfnRects = dfn.getClientRects();
+      // Find the `top` offset when the `dfn` can be spread across multiple lines
+      let closestTop = 0;
+      let minDiff = Infinity;
+      for (const rect of dfnRects) {
+        const { top, bottom } = rect;
+        const diffFromClickY = Math.abs((top + bottom) / 2 - y);
+        if (diffFromClickY < minDiff) {
+          minDiff = diffFromClickY;
+          closestTop = top;
         }
-        // As it's a dialog, we trap focus.
-        // TODO: when <dialog> becomes a implemented, we should really
-          // use that.
-          trapFocus(panel, dfn);
+      }
+    
+      const top = window.scrollY + closestTop + dfnRects[0].height;
+      const left = x - MARGIN;
+      panel.style.left = `${left}px`;
+      panel.style.top = `${top}px`;
+    
+      // Find if the panel is flowing out of the window
+      const panelRect = panel.getBoundingClientRect();
+      const SCREEN_WIDTH = Math.min(window.innerWidth, window.screen.width);
+      if (panelRect.right > SCREEN_WIDTH) {
+        const newLeft = Math.max(MARGIN, x + MARGIN - panelRect.width);
+        const newCaretOffset = left - newLeft;
+        panel.style.left = `${newLeft}px`;
+        /** @type {HTMLElement} */
+        const caret = panel.querySelector(".caret");
+        caret.style.left = `${newCaretOffset}px`;
+      }
+    
+      // As it's a dialog, we trap focus.
+      // TODO: when <dialog> becomes a implemented, we should really
+      // use that.
+      trapFocus(panel, dfn);
+    }
+    
+    /**
+     * @param {HTMLElement} panel
+     * @param {HTMLElement} dfn
+     * @returns
+     */
+    function trapFocus(panel, dfn) {
+      /** @type NodeListOf<HTMLAnchorElement> elements */
+      const anchors = panel.querySelectorAll("a[href]");
+      // No need to trap focus
+      if (!anchors.length) return;
+    
+      // Move focus to first anchor element
+      const first = anchors.item(0);
+      first.focus();
+    
+      const trapListener = createTrapListener(anchors, panel, dfn);
+      panel.addEventListener("keydown", trapListener);
+    
+      // Hiding the panel releases the trap
+      const mo = new MutationObserver(records => {
+        const [record] = records;
+        const target = /** @type HTMLElement */ (record.target);
+        if (target.hidden) {
+          panel.removeEventListener("keydown", trapListener);
+          mo.disconnect();
         }
-        /**
-        * @param {HTMLElement} panel
-        * @param {HTMLElement} dfn
-        * @returns
-        */
-        function trapFocus(panel, dfn) {
-          /** @type NodeListOf<HTMLAnchorElement> elements */
-            const anchors = panel.querySelectorAll("a[href]");
-            // No need to trap focus
-            if (!anchors.length) return;
-            // Move focus to first anchor element
-            const first = anchors.item(0);
-            first.focus();
-            const trapListener = createTrapListener(anchors, panel, dfn);
-            panel.addEventListener("keydown", trapListener);
-            // Hiding the panel releases the trap
-            const mo = new MutationObserver(records => {
-              const [record] = records;
-              const target = /** @type HTMLElement */ (record.target);
-              if (target.hidden) {
-                panel.removeEventListener("keydown", trapListener);
-                mo.disconnect();
-              }
-            });
-            mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
-          }
-          /**
-          *
-          * @param {NodeListOf<HTMLAnchorElement>} anchors
-            * @param {HTMLElement} panel
-            * @param {HTMLElement} dfn
-            * @returns
-            */
-            function createTrapListener(anchors, panel, dfn) {
-              const lastIndex = anchors.length - 1;
-              let currentIndex = 0;
-              return event => {
-                switch (event.key) {
-                  // Hitting "Tab" traps us in a nice loop around elements.
-                  case "Tab": {
-                    event.preventDefault();
-                    currentIndex += event.shiftKey ? -1 : +1;
-                    if (currentIndex < 0) {
-                      currentIndex = lastIndex;
-                    } else if (currentIndex > lastIndex) {
-                      currentIndex = 0;
-                    }
-                    anchors.item(currentIndex).focus();
-                    break;
-                  }
-                  // Hitting "Enter" on an anchor releases the trap.
-                  case "Enter":
-                  hidePanel(panel);
-                  break;
-                  // Hitting "Escape" returns focus to dfn.
-                  case "Escape":
-                  hidePanel(panel);
-                  dfn.focus();
-                  return;
-                }
-              };
+      });
+      mo.observe(panel, { attributes: true, attributeFilter: ["hidden"] });
+    }
+    
+    /**
+     *
+     * @param {NodeListOf<HTMLAnchorElement>} anchors
+     * @param {HTMLElement} panel
+     * @param {HTMLElement} dfn
+     * @returns
+     */
+    function createTrapListener(anchors, panel, dfn) {
+      const lastIndex = anchors.length - 1;
+      let currentIndex = 0;
+      return event => {
+        switch (event.key) {
+          // Hitting "Tab" traps us in a nice loop around elements.
+          case "Tab": {
+            event.preventDefault();
+            currentIndex += event.shiftKey ? -1 : +1;
+            if (currentIndex < 0) {
+              currentIndex = lastIndex;
+            } else if (currentIndex > lastIndex) {
+              currentIndex = 0;
             }
-            /** @param {HTMLElement} panel */
-            function hidePanel(panel) {
-              if (!panel) return;
-              panel.hidden = true;
-              panel.classList.remove("docked");
-            }
-          })()
-        </script>
-        <script src="./resources/fixup.js"></script>
-      </body>
-      </html>
+            anchors.item(currentIndex).focus();
+            break;
+          }
+    
+          // Hitting "Enter" on an anchor releases the trap.
+          case "Enter":
+            hidePanel(panel);
+            break;
+    
+          // Hitting "Escape" returns focus to dfn.
+          case "Escape":
+            hidePanel(panel);
+            dfn.focus();
+            return;
+        }
+      };
+    }
+    
+    /** @param {HTMLElement} panel */
+    function hidePanel(panel) {
+      if (!panel) return;
+      panel.hidden = true;
+      panel.classList.remove("docked");
+    }
+    })()
+  </script>
+  <script src="./resources/fixup.js"></script>
+</body>
+</html>
